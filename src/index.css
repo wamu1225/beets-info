@@ -30,30 +30,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-:root[data-theme='dark'] {
-  --primary: #D63F66;
-  --primary-dark: #B82149;
-  --primary-light: #E76A8A;
-  --accent: #7BA068;
-  --accent-light: #9BBE8B;
-
-  --text: #f5f0eb;
-  --text-muted: #c8bdb0;
-  --text-subtle: #9c8f80;
-
-  --bg: #1a1416;
-  --bg-warm: #261c1f;
-  --card-bg: #2d2226;
-  --border: #3d2f33;
-  --border-strong: #4a3a3f;
-
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.4);
-
-  color: var(--text);
-  background-color: var(--bg);
-}
-
 * {
   box-sizing: border-box;
 }
