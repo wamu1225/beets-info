@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import type { ReactNode } from 'react';
-import { ArrowLeft, List, ChevronRight, Menu, X, Calendar, Share2 } from 'lucide-react';
+import { ArrowLeft, List, ChevronRight, Menu, X, Calendar } from 'lucide-react';
 import { sections } from './data/sections';
 import type { Section } from './data/sections';
 import { FAQ_BY_SECTION } from './data/faqs';
@@ -326,32 +326,6 @@ function formatDate(iso: string): string {
   return `${m[1]}年${parseInt(m[2], 10)}月${parseInt(m[3], 10)}日`;
 }
 
-function ShareButtons({ section }: { section: Section }) {
-  const url = `https://study-apps.com${BASE}/${section.id}/`;
-  const text = section.title;
-  const enc = encodeURIComponent;
-  return (
-    <div className="share-buttons" aria-label="この記事をシェア">
-      <span className="share-label"><Share2 size={14} /> シェア</span>
-      <a
-        href={`https://twitter.com/intent/tweet?text=${enc(text)}&url=${enc(url)}`}
-        target="_blank" rel="noopener noreferrer" className="share-btn share-x"
-        aria-label="X（Twitter）でシェア"
-      >X (Twitter)</a>
-      <a
-        href={`https://social-plugins.line.me/lineit/share?url=${enc(url)}`}
-        target="_blank" rel="noopener noreferrer" className="share-btn share-line"
-        aria-label="LINE でシェア"
-      >LINE</a>
-      <a
-        href={`https://www.facebook.com/sharer/sharer.php?u=${enc(url)}`}
-        target="_blank" rel="noopener noreferrer" className="share-btn share-fb"
-        aria-label="Facebook でシェア"
-      >Facebook</a>
-    </div>
-  );
-}
-
 function RelatedSections({ currentId }: { currentId: string }) {
   const related = sections.filter((s) => s.id !== currentId);
   return (
@@ -436,7 +410,6 @@ function SectionPage({ section }: { section: Section }) {
           {parseContent(section.content)}
         </div>
         <FAQBlock sectionId={section.id} />
-        <ShareButtons section={section} />
         <RelatedSections currentId={section.id} />
         <div className="section-footer">
           <a

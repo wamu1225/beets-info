@@ -581,48 +581,6 @@
   color: var(--primary);
 }
 
-/* ── シェアボタン ── */
-.share-buttons {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
-  padding: 16px 0;
-  margin: 24px 0;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-}
-
-.share-label {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 0.85rem;
-  color: var(--text-subtle);
-  font-weight: 600;
-  margin-right: 4px;
-}
-
-.share-btn {
-  padding: 6px 14px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: white;
-  transition: opacity 0.15s;
-}
-
-.share-btn:hover {
-  opacity: 0.85;
-  text-decoration: none;
-  color: white;
-}
-
-.share-x { background: #000000; }
-.share-line { background: #06C755; }
-.share-fb { background: #1877F2; }
-
 /* ── 用語集 ── */
 .glossary-list {
   margin: 0;
@@ -869,59 +827,7 @@
   .section-content .content-table td {
     padding: 8px 10px;
   }
-  .share-buttons {
-    gap: 6px;
-  }
-  .share-btn {
-    padding: 6px 10px;
-    font-size: 0.8rem;
-  }
   .related-grid {
     grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* ── 印刷スタイル ── */
-@media print {
-  .site-header,
-  .site-footer,
-  .breadcrumb,
-  .toc,
-  .share-buttons,
-  .related-sections,
-  .section-footer,
-  .nav-toggle,
-  .site-nav {
-    display: none !important;
-  }
-  body {
-    background: white;
-    color: black;
-  }
-  .section-page {
-    border: none;
-    box-shadow: none;
-    padding: 0;
-  }
-  .section-page h1 {
-    color: black;
-    border-bottom: 2px solid black;
-  }
-  .section-content .content-h2 {
-    color: black;
-    background: none;
-    border-left-color: black;
-  }
-  .callout, .references, .medical-disclaimer {
-    border: 1px solid #999;
-    background: white !important;
-    color: black !important;
-  }
-  a {
-    color: black !important;
-    text-decoration: underline;
-  }
-  .article-meta {
-    color: #555;
   }
 }
