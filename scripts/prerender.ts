@@ -472,4 +472,27 @@ writeStaticPage(
 );
 
 console.log(`✓ Generated ${generatedCount} static pages`);
+
+// sitemap.xml を sections + 静的ページから動的生成（手動更新による抜け漏れ防止）
+const sitemapToday = new Date().toISOString().split('T')[0];
+const sitemapEntries = [
+  { path: '/', changefreq: 'weekly', priority: '1.0' },
+  ...sections.map((s) => ({ path: `/${s.id}/`, changefreq: 'monthly', priority: '0.9' })),
+  { path: '/glossary/', changefreq: 'monthly', priority: '0.7' },
+  { path: '/about/', changefreq: 'yearly', priority: '0.3' },
+  { path: '/privacy/', changefreq: 'yearly', priority: '0.3' },
+];
+const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${sitemapEntries.map((e) => `  <url>
+    <loc>${BASE_URL}${e.path}</loc>
+    <lastmod>${sitemapToday}</lastmod>
+    <changefreq>${e.changefreq}</changefreq>
+    <priority>${e.priority}</priority>
+  </url>`).join('\n')}
+</urlset>
+`;
+fs.writeFileSync(path.join(DIST_DIR, 'sitemap.xml'), sitemapXml);
+console.log(`✓ sitemap.xml generated (${sitemapEntries.length} URLs)`);
+
 console.log('--- Done ---');
