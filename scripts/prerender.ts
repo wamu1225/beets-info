@@ -2,6 +2,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { sections } from '../src/data/sections.ts';
 import { FAQ_BY_SECTION } from '../src/data/faqs.ts';
+import { referencesHtml } from '../src/references.ts';
 import { glossary } from '../src/data/glossary.ts';
 
 const DIST_DIR = path.resolve(process.cwd(), 'dist');
@@ -264,6 +265,7 @@ function buildSectionFallback(s: (typeof sections)[number]): string {
 ${contentHtml}
   </div>
   ${faqHtml}
+  ${referencesHtml(s.references)}
   <p style="margin-top:32px"><a href="/beets-info/" style="color:#8B1538">← トップへ戻る</a></p>
 </article>`;
 }

@@ -1,3 +1,5 @@
+import type { Reference } from '../references';
+
 export type Section = {
   id: string;
   title: string;
@@ -9,6 +11,7 @@ export type Section = {
   toc: string[];
   content: string;
   updatedAt: string;
+  references?: Reference[];
 };
 
 export const sections: Section[] = [
@@ -119,7 +122,7 @@ export const sections: Section[] = [
     description: '硝酸塩・ベタレイン・葉酸・カリウム・鉄など、ビーツに含まれる主な栄養素と、よく語られる健康効果について、家庭目線でまとめています。',
     icon: 'activity',
     emoji: '💪',
-    lead: 'ビーツが「奇跡の野菜」や「飲む輸血」と呼ばれるのは、ただの宣伝文句ではありません。血圧を下げる硝酸塩、強力な抗酸化作用を持つベタレイン、妊婦に欠かせない葉酸、ナトリウム排出を助けるカリウム──ビーツに含まれる栄養素のひとつひとつに、しっかりとした科学的な裏付けがあります。ここでは、ビーツの主な栄養素と、それぞれが体に与える働きを順番にご紹介します。',
+    lead: 'ビーツは「奇跡の野菜」や「飲む輸血」と呼ばれることがあります。血管をゆるめる働きが報告されている硝酸塩、抗酸化作用を持つとされるベタレイン、葉酸、ナトリウム排出を助けるカリウム──こうした栄養素について、臨床研究で確かめられている範囲を中心に、家庭目線で整理します。健康効果には個人差があり、ここでの内容は医療助言の代替ではありません。',
     toc: [
       'ビーツの栄養成分（100gあたり）',
       '主役は「硝酸塩」と一酸化窒素',
@@ -134,7 +137,7 @@ export const sections: Section[] = [
 
 | 栄養素 | ビーツ100g中 | 他の野菜との比較 | 主な働き |
 |---|---|---|---|
-| 硝酸塩 | 約 250 mg | ニンジンの約2.5倍 | 血管拡張、血圧低下、持久力向上 |
+| 硝酸塩 | 約 250 mg | ニンジンの約2.5倍 | 血管拡張・血圧低下・持久力向上が報告されている |
 | 葉酸（B9） | 約 110 µg | トマトの約5倍 | 赤血球の生成、胎児の発育 |
 | カリウム | 約 380 mg | レタスの約1.9倍 | 余分なナトリウムの排出、血圧安定 |
 | 鉄 | 約 0.8 mg | キャベツの約2倍 | 酸素運搬、貧血予防 |
@@ -237,6 +240,10 @@ export const sections: Section[] = [
 👉 [日本国内のビーツ栽培・産地・旬のページを読む](/beets-info/cultivation/)
 `,
     updatedAt: '2026-05-18',
+    references: [
+      { label: 'ビートルートジュース摂取と血圧低下（22試験のメタ分析・収縮期 約−3.55mmHg、硝酸塩→NO経路の解説を含む）', publisher: 'The Journal of Nutrition / PMC（査読論文 2017）', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC5683004/' },
+      { label: '無機硝酸塩・ビートルートジュースと血圧（16試験のメタ分析・収縮期 約−4.4mmHg）', publisher: 'PubMed（査読論文・Siervo 2013）', url: 'https://pubmed.ncbi.nlm.nih.gov/23596162/' },
+    ],
   },
   {
     id: 'cultivation',

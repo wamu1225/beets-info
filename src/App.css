@@ -298,6 +298,20 @@
   font-weight: 700;
 }
 
+.references {
+  margin: 32px 0 8px;
+  padding: 18px 20px;
+  border: 1px solid var(--border, #e7d6da);
+  border-radius: 10px;
+  background: var(--card-bg, #fff);
+}
+.references-h { font-size: 1rem; color: var(--accent-dark, #8B1538); margin: 0 0 10px; }
+.references-list { margin: 0; padding-left: 1.1em; font-size: 0.9rem; line-height: 1.7; }
+.references-list li { margin-bottom: 6px; }
+.references-list a { color: #a01744; word-break: break-word; }
+.references .ref-pub { display: block; font-size: 0.8rem; color: var(--text-muted, #6b6b6b); }
+.references-note { font-size: 0.78rem; color: var(--text-muted, #6b6b6b); margin: 12px 0 0; line-height: 1.6; }
+
 .section-content .content-table-wrap {
   overflow-x: auto;
   margin: 0 0 20px;

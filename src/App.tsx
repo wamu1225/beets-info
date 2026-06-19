@@ -4,6 +4,7 @@ import { ArrowLeft, List, ChevronRight, Menu, X, Calendar } from 'lucide-react';
 import { sections } from './data/sections';
 import type { Section } from './data/sections';
 import { FAQ_BY_SECTION } from './data/faqs';
+import { referencesHtml } from './references';
 import { glossary } from './data/glossary';
 import './App.css';
 
@@ -410,6 +411,9 @@ function SectionPage({ section }: { section: Section }) {
           {parseContent(section.content)}
         </div>
         <FAQBlock sectionId={section.id} />
+        {section.references && section.references.length > 0 && (
+          <div dangerouslySetInnerHTML={{ __html: referencesHtml(section.references) }} />
+        )}
         <RelatedSections currentId={section.id} />
         <div className="section-footer">
           <a
