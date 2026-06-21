@@ -49,6 +49,50 @@ const figures: Record<string, Figure> = {
   </g>
 </svg>`,
   },
+  // 硝酸塩→一酸化窒素(NO)→血管拡張 の流れ図（nutrition の中心的な機序）
+  'nitrate-no-flow': {
+    title: 'ビーツの硝酸塩が一酸化窒素になり血管を広げるまでの流れ図',
+    caption:
+      'ビーツに多い硝酸塩は、口の中の細菌や体内のはたらきで一酸化窒素（NO）に変わります。NOには血管をゆるめて広げる作用があり、血圧の低下などが報告されています。（写真ではなく模式図です）',
+    svg: `<svg viewBox="0 0 440 360" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:420px;height:auto;display:block;margin:0 auto">
+  <rect x="20" y="8" width="400" height="64" rx="10" fill="#fbeef2" stroke="#d59bac" stroke-width="1.5"/>
+  <text x="220" y="46" text-anchor="middle" font-size="16" font-weight="700" fill="#5e0f26">ビーツの硝酸塩（NO₃⁻）</text>
+  <path d="M220 74 L220 90" stroke="#a01744" stroke-width="2"/>
+  <path d="M220 96 l-6 -9 h12 z" fill="#a01744"/>
+  <rect x="20" y="98" width="400" height="64" rx="10" fill="#fbeef2" stroke="#d59bac" stroke-width="1.5"/>
+  <text x="220" y="136" text-anchor="middle" font-size="15" font-weight="600" fill="#5e0f26">口の中の細菌が亜硝酸塩（NO₂⁻）に変える</text>
+  <path d="M220 164 L220 180" stroke="#a01744" stroke-width="2"/>
+  <path d="M220 186 l-6 -9 h12 z" fill="#a01744"/>
+  <rect x="20" y="188" width="400" height="64" rx="10" fill="#fbeef2" stroke="#d59bac" stroke-width="1.5"/>
+  <text x="220" y="226" text-anchor="middle" font-size="16" font-weight="700" fill="#5e0f26">体内で一酸化窒素（NO）になる</text>
+  <path d="M220 254 L220 270" stroke="#a01744" stroke-width="2"/>
+  <path d="M220 276 l-6 -9 h12 z" fill="#a01744"/>
+  <rect x="20" y="278" width="400" height="70" rx="10" fill="#8B1538"/>
+  <text x="220" y="310" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">血管が広がる</text>
+  <text x="220" y="332" text-anchor="middle" font-size="14" fill="#ffd9e3">血圧の低下・血流のサポート</text>
+</svg>`,
+  },
+  // 保存方法ごとの日持ちの目安（storage の検証済み数値をバーで可視化）
+  'storage-duration': {
+    title: 'ビーツの保存方法ごとの日持ちの目安の棒グラフ',
+    caption:
+      'ビーツの保存方法ごとの日持ちのおおよその目安です（保存状態により前後します）。冷凍がもっとも長く約3か月、生のままの冷蔵は2〜3週間、加熱後は約1週間が目安です。（模式図）',
+    svg: `<svg viewBox="0 0 600 215" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:560px;height:auto;display:block;margin:0 auto">
+  <line x1="150" y1="8" x2="150" y2="195" stroke="#e7d6da" stroke-width="1"/>
+  <text x="8" y="38" font-size="14" font-weight="600" fill="#333">加熱後・冷蔵</text>
+  <rect x="150" y="20" width="28" height="30" rx="3" fill="#c98aa0"/>
+  <text x="186" y="40" font-size="13" fill="#555">約1週間</text>
+  <text x="8" y="86" font-size="14" font-weight="600" fill="#333">生・冷蔵</text>
+  <rect x="150" y="68" width="69" height="30" rx="3" fill="#b25c79"/>
+  <text x="227" y="88" font-size="13" fill="#555">2〜3週間</text>
+  <text x="8" y="134" font-size="14" font-weight="600" fill="#333">ピクルス</text>
+  <rect x="150" y="116" width="118" height="30" rx="3" fill="#9c3358"/>
+  <text x="276" y="136" font-size="13" fill="#555">1ヶ月以上</text>
+  <text x="8" y="182" font-size="14" font-weight="600" fill="#333">冷凍</text>
+  <rect x="150" y="164" width="330" height="30" rx="3" fill="#8B1538"/>
+  <text x="488" y="184" font-size="13" fill="#555">約3ヶ月</text>
+</svg>`,
+  },
 };
 
 export function figureHtml(key: string): string | null {
