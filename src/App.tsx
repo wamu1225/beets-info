@@ -5,6 +5,7 @@ import { sections } from './data/sections';
 import type { Section } from './data/sections';
 import { FAQ_BY_SECTION } from './data/faqs';
 import { referencesHtml } from './references';
+import { figureHtml } from './figures-data';
 import { glossary } from './data/glossary';
 import './App.css';
 
@@ -194,6 +195,14 @@ function parseContent(content: string): ReactNode[] {
     }
     if (trimmed.startsWith('✅ ')) {
       result.push(<p key={key++} className="callout callout-success">{parseInline(trimmed.slice(2).trim())}</p>);
+      i++; continue;
+    }
+
+    // 図（{{figure:KEY}}）→ prerender と同じHTML文字列を共用
+    const figMatch = /^\{\{figure:([a-z0-9-]+)\}\}$/.exec(trimmed);
+    if (figMatch) {
+      const fig = figureHtml(figMatch[1]);
+      if (fig) result.push(<div key={key++} dangerouslySetInnerHTML={{ __html: fig }} />);
       i++; continue;
     }
 

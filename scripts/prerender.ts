@@ -3,6 +3,7 @@ import * as path from 'path';
 import { sections } from '../src/data/sections.ts';
 import { FAQ_BY_SECTION } from '../src/data/faqs.ts';
 import { referencesHtml } from '../src/references.ts';
+import { figureHtml } from '../src/figures-data.ts';
 import { glossary } from '../src/data/glossary.ts';
 
 const DIST_DIR = path.resolve(process.cwd(), 'dist');
@@ -151,6 +152,17 @@ function markdownToHtml(content: string): string {
     }
     if (trimmed.startsWith('✅ ')) {
       out.push(`<p class="callout callout-success">${parseInlineToHtml(trimmed.slice(2).trim())}</p>`);
+      i++; continue;
+    }
+
+    const figMatch = /^\{\{figure:([a-z0-9-]+)\}\}$/.exec(trimmed);
+    if (figMatch) {
+      const fig = figureHtml(figMatch[1]);
+      if (!fig) {
+        console.error(`Error: unknown figure key "{{figure:${figMatch[1]}}}"`);
+        process.exit(1);
+      }
+      out.push(fig);
       i++; continue;
     }
 

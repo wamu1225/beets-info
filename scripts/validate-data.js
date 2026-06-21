@@ -70,6 +70,20 @@ for (const { id, block } of sectionBlocks) {
   }
 }
 
+// 図トークン {{figure:KEY}} のキーが figures-data.ts に存在するか（生タグ漏れ防止スモーク）
+const figuresPath = path.join(__dirname, '..', 'src', 'figures-data.ts');
+if (fs.existsSync(figuresPath)) {
+  const figSrc = fs.readFileSync(figuresPath, 'utf-8');
+  // figures オブジェクトのキー（'key': { ... ）を抽出
+  const knownKeys = [...figSrc.matchAll(/'([a-z0-9-]+)':\s*\{/g)].map((m) => m[1]);
+  const usedKeys = [...src.matchAll(/\{\{figure:([a-z0-9-]+)\}\}/g)].map((m) => m[1]);
+  for (const k of usedKeys) {
+    if (!knownKeys.includes(k)) {
+      errors.push(`figure key "{{figure:${k}}}" not found in figures-data.ts`);
+    }
+  }
+}
+
 if (errors.length) {
   console.error('Validation errors:');
   for (const e of errors) console.error('  - ' + e);
