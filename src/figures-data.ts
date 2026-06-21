@@ -8,6 +8,42 @@ function esc(s: string): string {
   return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
+// 12か月グリッド（時期もの）の共通ビルダー。座標ミスを避けるため手書きせず生成する。
+// rows[].cells は長さ12（1月→12月）。各要素は塗り色、または null（空セル）。
+type GridRow = { label: string; cells: (string | null)[] };
+function monthGridSvg(rows: GridRow[]): string {
+  const labelW = 84, cellW = 41, cellH = 26, gap = 3, headerH = 22, pad = 6;
+  const x0 = labelW;
+  const W = labelW + 12 * cellW + pad;
+  const H = headerH + rows.length * (cellH + gap) + pad;
+  const parts: string[] = [];
+  parts.push(
+    `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:560px;height:auto;display:block;margin:0 auto">`
+  );
+  for (let m = 0; m < 12; m++) {
+    const cx = x0 + m * cellW + cellW / 2;
+    parts.push(`<text x="${cx}" y="15" text-anchor="middle" font-size="12" fill="#777">${m + 1}</text>`);
+  }
+  rows.forEach((row, ri) => {
+    const ry = headerH + ri * (cellH + gap);
+    parts.push(`<text x="6" y="${ry + cellH / 2 + 4}" font-size="12.5" font-weight="600" fill="#333">${esc(row.label)}</text>`);
+    for (let m = 0; m < 12; m++) {
+      const cx = x0 + m * cellW;
+      const fill = row.cells[m] || '#f4ecef';
+      parts.push(`<rect x="${cx + 1}" y="${ry}" width="${cellW - 2}" height="${cellH}" rx="3" fill="${fill}"/>`);
+    }
+  });
+  parts.push('</svg>');
+  return parts.join('\n');
+}
+
+// 時期ものの塗り色
+const C_PEAK = '#8B1538'; // 旬・収穫期（濃）
+const C_MID = '#d99fb0'; // 早採り・収穫終盤・中程度（淡）
+const C_SOW = '#6a994e'; // 種まき（緑）
+const fillMonths = (spec: Record<number, string>): (string | null)[] =>
+  Array.from({ length: 12 }, (_, i) => spec[i + 1] ?? null);
+
 const figures: Record<string, Figure> = {
   // 品種別の断面の模式図（デトロイト=濃赤ほぼ均一 / ゴルゴ=赤白の渦巻き / ゴールデン=黄・年輪）
   'variety-cross-sections': {
@@ -92,6 +128,30 @@ const figures: Record<string, Figure> = {
   <rect x="150" y="164" width="330" height="30" rx="3" fill="#8B1538"/>
   <text x="488" y="184" font-size="13" fill="#555">約3ヶ月</text>
 </svg>`,
+  },
+  // 旬カレンダー（種まき/収穫・旬/入手しやすさ の年間リズム・calendarの月別表を可視化）
+  'seasonal-calendar': {
+    title: 'ビーツの種まき・収穫・入手しやすさの月別カレンダー',
+    caption:
+      '緑＝種まきの目安、濃い赤＝収穫・旬（生が出回りやすい）、淡い赤＝早採り・終盤や中程度。ビーツは春まき（初夏どり）と秋まき（晩秋〜冬どり）で旬が年2回あります。地域・品種で前後する目安です。',
+    svg: monthGridSvg([
+      { label: '種まき', cells: fillMonths({ 3: C_SOW, 4: C_SOW, 8: C_SOW, 9: C_SOW }) },
+      { label: '収穫・旬', cells: fillMonths({ 1: C_MID, 5: C_MID, 6: C_PEAK, 7: C_PEAK, 10: C_MID, 11: C_PEAK, 12: C_PEAK }) },
+      { label: '入手しやすさ', cells: fillMonths({ 1: C_MID, 5: C_MID, 6: C_PEAK, 7: C_PEAK, 10: C_MID, 11: C_PEAK, 12: C_PEAK }) },
+    ]),
+  },
+  // 産地別の主な収穫時期（cultivationの産地表をガントチャート風に可視化）
+  'region-harvest': {
+    title: '日本の主要産地別のビーツの主な収穫時期',
+    caption:
+      '主な産地ごとの収穫時期の目安です（濃い赤＝収穫期）。北海道・長野は夏〜秋、熊本・京都は晩秋〜冬・春先、兵庫はほぼ通年。ほかに埼玉などで春・秋の小規模生産もあります。年や品種により前後します。',
+    svg: monthGridSvg([
+      { label: '北海道', cells: fillMonths({ 7: C_PEAK, 8: C_PEAK, 9: C_PEAK, 10: C_PEAK, 11: C_PEAK }) },
+      { label: '長野', cells: fillMonths({ 6: C_PEAK, 7: C_PEAK, 8: C_PEAK, 9: C_PEAK, 10: C_PEAK }) },
+      { label: '熊本', cells: fillMonths({ 11: C_PEAK, 12: C_PEAK, 1: C_PEAK, 2: C_PEAK }) },
+      { label: '京都', cells: fillMonths({ 11: C_PEAK, 12: C_PEAK, 1: C_PEAK, 2: C_PEAK, 3: C_PEAK }) },
+      { label: '兵庫', cells: fillMonths({ 1: C_PEAK, 2: C_PEAK, 3: C_PEAK, 4: C_PEAK, 5: C_PEAK, 6: C_PEAK, 7: C_PEAK, 8: C_PEAK, 9: C_PEAK, 10: C_PEAK, 11: C_PEAK, 12: C_PEAK }) },
+    ]),
   },
 };
 
