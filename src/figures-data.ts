@@ -153,6 +153,38 @@ const figures: Record<string, Figure> = {
       { label: '兵庫', cells: fillMonths({ 1: C_PEAK, 2: C_PEAK, 3: C_PEAK, 4: C_PEAK, 5: C_PEAK, 6: C_PEAK, 7: C_PEAK, 8: C_PEAK, 9: C_PEAK, 10: C_PEAK, 11: C_PEAK, 12: C_PEAK }) },
     ]),
   },
+  // シュウ酸×カルシウムの2経路（cautionsの結石対策の機序・NIDDK由来で既出典）
+  'oxalate-calcium': {
+    title: 'シュウ酸がカルシウムと結びつく場所による結石リスクの違い',
+    caption:
+      'シュウ酸は、カルシウムを多く含む食材と一緒に食べると腸の中で結びつき、吸収されずに排出されます。単独で多くとると腸から吸収され、腎臓でカルシウムと結びついて結石の原因になることがあります。ビーツに乳製品などを合わせるのは、この点で理にかなっています。（写真ではなく模式図です）',
+    svg: `<svg viewBox="0 0 440 470" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:420px;height:auto;display:block;margin:0 auto">
+  <rect x="20" y="8" width="400" height="30" rx="6" fill="#6a994e"/>
+  <text x="220" y="28" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">カルシウムと一緒に食べると</text>
+  <rect x="20" y="46" width="400" height="44" rx="8" fill="#eef4e8" stroke="#a7c293" stroke-width="1.5"/>
+  <text x="220" y="73" text-anchor="middle" font-size="14.5" fill="#2f5233">シュウ酸 ＋ カルシウム（食品）</text>
+  <path d="M220 90 L220 105" stroke="#6a994e" stroke-width="2"/>
+  <path d="M220 110 l-6 -8 h12 z" fill="#6a994e"/>
+  <rect x="20" y="112" width="400" height="44" rx="8" fill="#eef4e8" stroke="#a7c293" stroke-width="1.5"/>
+  <text x="220" y="139" text-anchor="middle" font-size="14.5" fill="#2f5233">腸の中で結びつき、吸収されない</text>
+  <path d="M220 156 L220 171" stroke="#6a994e" stroke-width="2"/>
+  <path d="M220 176 l-6 -8 h12 z" fill="#6a994e"/>
+  <rect x="20" y="178" width="400" height="46" rx="8" fill="#386641"/>
+  <text x="220" y="206" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff">便として排出。結石になりにくい</text>
+  <rect x="20" y="244" width="400" height="30" rx="6" fill="#8B1538"/>
+  <text x="220" y="264" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">シュウ酸だけ・とりすぎると</text>
+  <rect x="20" y="282" width="400" height="44" rx="8" fill="#fbeef2" stroke="#d59bac" stroke-width="1.5"/>
+  <text x="220" y="309" text-anchor="middle" font-size="14.5" fill="#8B1538">シュウ酸が腸から吸収される</text>
+  <path d="M220 326 L220 341" stroke="#a01744" stroke-width="2"/>
+  <path d="M220 346 l-6 -8 h12 z" fill="#a01744"/>
+  <rect x="20" y="348" width="400" height="44" rx="8" fill="#fbeef2" stroke="#d59bac" stroke-width="1.5"/>
+  <text x="220" y="375" text-anchor="middle" font-size="14.5" fill="#8B1538">腎臓でカルシウムと結びつく</text>
+  <path d="M220 392 L220 407" stroke="#a01744" stroke-width="2"/>
+  <path d="M220 412 l-6 -8 h12 z" fill="#a01744"/>
+  <rect x="20" y="414" width="400" height="46" rx="8" fill="#8B1538"/>
+  <text x="220" y="442" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff">シュウ酸カルシウムの結石に</text>
+</svg>`,
+  },
 };
 
 export function figureHtml(key: string): string | null {
