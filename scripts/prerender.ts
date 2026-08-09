@@ -5,6 +5,7 @@ import { FAQ_BY_SECTION } from '../src/data/faqs.ts';
 import { referencesHtml } from '../src/references.ts';
 import { figureHtml } from '../src/figures-data.ts';
 import { glossary } from '../src/data/glossary.ts';
+import { ABOUT_CONTENT, PRIVACY_CONTENT } from '../src/data/static-pages.ts';
 
 const DIST_DIR = path.resolve(process.cwd(), 'dist');
 const INDEX_HTML_PATH = path.join(DIST_DIR, 'index.html');
@@ -471,44 +472,19 @@ writeStaticPage(
   `<p style="color:#555;font-size:1.05rem;margin:16px 0 24px">本サイトに登場する専門用語をまとめました。ベタレイン、シュウ酸、FODMAP など、健康効果や注意点の理解に役立ててください。</p><dl style="margin:0;padding:0">${glossaryHtml}</dl>`
 );
 
-// App.tsx の ABOUT_CONTENT / PRIVACY_CONTENT と同一テキスト（静的HTMLがReact側の要約に陥り
-// 内容が乖離していたため、2026-08-07・O-2-14で本文を完全同期。markdownToHtmlで同じ変換規則を通す）
-const ABOUT_CONTENT_STATIC = `本サイト「ビーツの基本ガイド」は、ビーツ（テーブルビート）に興味を持った方が、まずひととおりの情報に触れられるようにまとめたリファレンスサイトです。植物としての特徴、栄養、産地、調理、保存、注意点までを家庭目線で紹介しています。
-
-本サイトの内容は一般的な情報提供を目的としており、医学的診断・治療・予防のための助言を構成するものではありません。健康上の懸念がある方は医師または管理栄養士にご相談ください。
-
-## 編集・制作方針
-
-本サイトのコンテンツは、一般に入手できる書籍や公開されている情報を参照しつつ、運営者が内容を再構成し、家庭の読者に分かりやすい形で独自に解説しています。他サイトの文章をそのまま転載することはありません。栄養や健康に関わる記述は、特定の効果を保証するものではなく、内容に誤りや古くなった情報を見つけた場合は、お問い合わせを受けて随時見直し・修正します。
-
-## お問い合わせ
-
-ご質問・誤りのご指摘は[こちらのGoogleフォーム](https://forms.gle/ccMv7oKwz6ysDHBe6)からお願いします。`;
-
-const PRIVACY_CONTENT_STATIC = `## アクセス解析
-
-本サイトでは、サイトの利用状況把握のために Google Analytics を使用しています。Google Analytics はクッキーを利用して匿名のトラフィックデータを収集します。収集される情報は匿名で、個人を特定するものではありません。
-
-## 広告について
-
-本サイトでは Google AdSense などの第三者配信の広告サービスを利用することがあります。広告配信事業者は、ユーザーの興味に応じた広告を表示するためにクッキーを使用することがあります。Google が広告 Cookie を使用することにより、Google や提携サイトによる広告の配信が可能になります。
-
-## 免責事項
-
-本サイトの情報は可能な限り正確を期していますが、その完全性・正確性を保証するものではありません。本サイトの情報を利用したことにより生じた損害について、運営者は一切の責任を負いません。`;
-
+// SSOT（src/data/static-pages.ts）から本文を読む（2026-08-10・O-2-15＝App.tsxとの二重管理を解消）
 writeStaticPage(
   'about',
   'サイトについて',
   'ビーツの基本ガイドについて。本サイトの目的と情報源、免責事項を説明します。',
-  markdownToHtml(ABOUT_CONTENT_STATIC)
+  markdownToHtml(ABOUT_CONTENT)
 );
 
 writeStaticPage(
   'privacy',
   'プライバシーポリシー',
   'ビーツの基本ガイドのプライバシーポリシー。Cookie・アクセス解析・広告の使用について。',
-  markdownToHtml(PRIVACY_CONTENT_STATIC)
+  markdownToHtml(PRIVACY_CONTENT)
 );
 
 console.log(`✓ Generated ${generatedCount} static pages`);
