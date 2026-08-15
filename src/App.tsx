@@ -505,7 +505,7 @@ function Glossary() {
       <Breadcrumb currentTitle="用語集" />
       <article className="section-page">
         <header className="article-header">
-          <div className="article-emoji" aria-hidden="true">📖</div>
+          <div className="article-emoji" aria-hidden="true"><SectionIcon name="book-open" size={30} /></div>
           <h1>ビーツ用語集</h1>
         </header>
         <p className="lead">
