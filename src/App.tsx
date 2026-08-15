@@ -8,9 +8,14 @@ import { referencesHtml } from './references';
 import { figureHtml } from './figures-data';
 import { glossary } from './data/glossary';
 import { ABOUT_CONTENT, PRIVACY_CONTENT } from './data/static-pages';
+import { sectionIconSvg } from './section-icons';
 import './App.css';
 
 const BASE = '/beets-info';
+
+function SectionIcon({ name, size = 24 }: { name: string; size?: number }) {
+  return <span className="section-icon" dangerouslySetInnerHTML={{ __html: sectionIconSvg(name, size) }} />;
+}
 
 
 function getCurrentPath(): string {
@@ -252,7 +257,7 @@ function Header() {
               href={`${BASE}/${s.id}/`}
               onClick={(e) => { e.preventDefault(); navigateTo(`/${s.id}/`); setNavOpen(false); }}
             >
-              <span className="nav-emoji">{s.emoji}</span>
+              <span className="nav-emoji"><SectionIcon name={s.icon} size={18} /></span>
               <span>{s.shortTitle}</span>
             </a>
           ))}
@@ -266,7 +271,7 @@ function Home() {
   return (
     <>
       <div className="hero">
-        <div className="hero-emoji" aria-hidden="true">🥗</div>
+        <div className="hero-emoji" aria-hidden="true"><SectionIcon name="leaf" size={40} /></div>
         <h1>ビーツの基本ガイド</h1>
         <p>
           スーパーフードとして注目されるビーツ（テーブルビート）。<br />
@@ -284,7 +289,7 @@ function Home() {
             className="section-card"
             onClick={(e) => { e.preventDefault(); navigateTo(`/${s.id}/`); }}
           >
-            <div className="section-card-emoji" aria-hidden="true">{s.emoji}</div>
+            <div className="section-card-emoji" aria-hidden="true"><SectionIcon name={s.icon} size={28} /></div>
             <h2 className="section-card-title">{s.shortTitle}</h2>
             <p className="section-card-desc">{s.description}</p>
             <span className="section-card-cta">読む →</span>
@@ -341,7 +346,7 @@ function RelatedSections({ currentId }: { currentId: string }) {
   const related = sections.filter((s) => s.id !== currentId);
   return (
     <aside className="related-sections" aria-label="関連記事">
-      <h3>📚 他のセクションも読む</h3>
+      <h3>他のセクションも読む</h3>
       <div className="related-grid">
         {related.map((s) => (
           <a
@@ -350,7 +355,7 @@ function RelatedSections({ currentId }: { currentId: string }) {
             className="related-card"
             onClick={(e) => { e.preventDefault(); navigateTo(`/${s.id}/`); }}
           >
-            <span className="related-emoji" aria-hidden="true">{s.emoji}</span>
+            <span className="related-emoji" aria-hidden="true"><SectionIcon name={s.icon} size={20} /></span>
             <span className="related-title">{s.shortTitle}</span>
           </a>
         ))}
@@ -365,7 +370,7 @@ function FAQBlock({ sectionId }: { sectionId: string }) {
   if (!faqs || faqs.length === 0) return null;
   return (
     <section className="faq-block" aria-label="よくある質問">
-      <h3>❓ よくある質問</h3>
+      <h3>よくある質問</h3>
       {faqs.map((qa, i) => (
         <details key={i} className="faq-item">
           <summary>{qa.question}</summary>
@@ -379,7 +384,7 @@ function FAQBlock({ sectionId }: { sectionId: string }) {
 function MedicalDisclaimer() {
   return (
     <div className="medical-disclaimer">
-      <strong>⚠️ 医学的助言ではありません</strong>：本サイトは一般的な情報を提供するもので、医師の診断・治療・予防の代わりにはなりません。健康上の懸念がある方、持病をお持ちの方、妊娠中・授乳中の方は、必ず医師または管理栄養士にご相談ください。
+      <strong>医学的助言ではありません</strong>：本サイトは一般的な情報を提供するもので、医師の診断・治療・予防の代わりにはなりません。健康上の懸念がある方、持病をお持ちの方、妊娠中・授乳中の方は、必ず医師または管理栄養士にご相談ください。
     </div>
   );
 }
@@ -406,7 +411,7 @@ function SectionPage({ section }: { section: Section }) {
       <Breadcrumb currentTitle={section.shortTitle} />
       <article className="section-page">
         <header className="article-header">
-          <div className="article-emoji" aria-hidden="true">{section.emoji}</div>
+          <div className="article-emoji" aria-hidden="true"><SectionIcon name={section.icon} size={34} /></div>
           <h1>{section.title}</h1>
           <div className="article-meta">
             <span className="article-meta-item"><Calendar size={14} /> 最終更新: {formatDate(section.updatedAt)}</span>

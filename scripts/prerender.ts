@@ -6,10 +6,14 @@ import { referencesHtml } from '../src/references.ts';
 import { figureHtml } from '../src/figures-data.ts';
 import { glossary } from '../src/data/glossary.ts';
 import { ABOUT_CONTENT, PRIVACY_CONTENT } from '../src/data/static-pages.ts';
+import { sectionIconSvg } from '../src/section-icons.ts';
 
 const DIST_DIR = path.resolve(process.cwd(), 'dist');
 const INDEX_HTML_PATH = path.join(DIST_DIR, 'index.html');
 const BASE_URL = 'https://study-apps.com/beets-info';
+
+const ico = (name: string, size: number) =>
+  `<span style="display:inline-flex;vertical-align:middle">${sectionIconSvg(name, size)}</span>`;
 
 console.log('--- beets-info SSG Pre-rendering ---');
 
@@ -243,7 +247,7 @@ function buildFaqHtml(sectionId: string): string {
         `<details style="background:#fff;border:1px solid #e7d8c8;border-radius:8px;margin-bottom:8px;padding:14px 18px"><summary style="cursor:pointer;font-weight:600;color:#1f2937">Q. ${escapeHtml(qa.question)}</summary><p style="margin:10px 0 0;color:#4b5563;line-height:1.85">A. ${escapeHtml(qa.answer)}</p></details>`
     )
     .join('');
-  return `<section style="margin:40px 0;padding:24px;background:#fef5ec;border:1px solid #e7d8c8;border-radius:12px"><h3 style="margin:0 0 16px;color:#8B1538;font-size:1.05rem">❓ よくある質問</h3>${items}</section>`;
+  return `<section style="margin:40px 0;padding:24px;background:#fef5ec;border:1px solid #e7d8c8;border-radius:12px"><h3 style="margin:0 0 16px;color:#8B1538;font-size:1.05rem">よくある質問</h3>${items}</section>`;
 }
 
 function formatDateJa(iso: string): string {
@@ -261,13 +265,13 @@ function buildSectionFallback(s: (typeof sections)[number]): string {
     : '';
   const isYMYL = s.id === 'nutrition' || s.id === 'cautions';
   const disclaimerHtml = isYMYL
-    ? `<div style="background:#fef2f2;border:1px solid #fecaca;border-left:4px solid #dc2626;border-radius:6px;padding:14px 16px;margin:0 0 28px;font-size:0.92rem;color:#7f1d1d;line-height:1.75"><strong style="display:block;margin-bottom:4px">⚠️ 医学的助言ではありません</strong>本サイトは一般的な情報を提供するもので、医師の診断・治療・予防の代わりにはなりません。健康上の懸念がある方は医師にご相談ください。</div>`
+    ? `<div style="background:#fef2f2;border:1px solid #fecaca;border-left:4px solid #dc2626;border-radius:6px;padding:14px 16px;margin:0 0 28px;font-size:0.92rem;color:#7f1d1d;line-height:1.75"><strong style="display:block;margin-bottom:4px">医学的助言ではありません</strong>本サイトは一般的な情報を提供するもので、医師の診断・治療・予防の代わりにはなりません。健康上の懸念がある方は医師にご相談ください。</div>`
     : '';
 
   return `<article style="font-family:'Hiragino Kaku Gothic ProN','Hiragino Sans','Yu Gothic',Meiryo,sans-serif;line-height:1.85;max-width:920px;margin:0 auto;padding:24px 16px;color:#1f2937">
   <nav style="font-size:0.85rem;color:#6b7280;margin:0 0 16px"><a href="/beets-info/" style="color:#8B1538;text-decoration:none">ビーツの基本ガイド</a> <span style="color:#9ca3af">›</span> <span style="color:#4b5563;font-weight:600">${escapeHtml(s.shortTitle)}</span></nav>
   <header style="margin-bottom:20px">
-    <div style="font-size:2.4rem;line-height:1;margin-bottom:8px">${s.emoji}</div>
+    <div style="font-size:2.4rem;line-height:1;margin-bottom:8px">${ico(s.icon, 40)}</div>
     <h1 style="font-size:1.7rem;color:#8B1538;border-bottom:2px solid #8B1538;padding-bottom:10px;margin:0 0 8px">${escapeHtml(s.title)}</h1>
     <div style="font-size:0.85rem;color:#9c8f80;margin-top:10px">最終更新: ${formatDateJa(s.updatedAt)}</div>
   </header>
