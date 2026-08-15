@@ -36,6 +36,13 @@ function slugify(_text: string, index: number): string {
 }
 
 // ── 簡易マークダウンパーサ ──
+// リスト項目の先頭に付いた行頭マーカー（コールアウト用の絵文字）を落とす。
+// コールアウト自体は段落レベルでしか処理していないため、「- ⚠️ 内容」のような
+// リスト項目内のマーカーは素通りして絵文字のまま残っていた（O-2-8・2026-08-15）。
+function stripLeadingMarker(text: string): string {
+  return text.replace(/^(?:⚠️|✅|💡|📖)\s*/, '');
+}
+
 function parseInline(text: string): ReactNode[] {
   const nodes: ReactNode[] = [];
   let remaining = text;
@@ -175,7 +182,7 @@ function parseContent(content: string): ReactNode[] {
     if (trimmed.startsWith('- ')) {
       const items: string[] = [];
       while (i < lines.length && lines[i].trim().startsWith('- ')) {
-        items.push(lines[i].trim().slice(2));
+        items.push(stripLeadingMarker(lines[i].trim().slice(2)));
         i++;
       }
       result.push(

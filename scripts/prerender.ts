@@ -37,6 +37,12 @@ function slugifyAscii(_text: string, index: number): string {
   return `section-${index}`;
 }
 
+// リスト項目先頭のコールアウト用絵文字マーカーを落とす（App.tsx の
+// stripLeadingMarker と同じ規則。O-2-8・2026-08-15）。
+function stripLeadingMarker(text: string): string {
+  return text.replace(/^(?:⚠️|✅|💡|📖)\s*/, '');
+}
+
 function parseInlineToHtml(text: string): string {
   let result = '';
   let remaining = text;
@@ -136,7 +142,7 @@ function markdownToHtml(content: string): string {
     if (trimmed.startsWith('- ')) {
       const items: string[] = [];
       while (i < lines.length && lines[i].trim().startsWith('- ')) {
-        items.push(lines[i].trim().slice(2));
+        items.push(stripLeadingMarker(lines[i].trim().slice(2)));
         i++;
       }
       out.push(`<ul class="content-ul">${items.map((it) => `<li>${parseInlineToHtml(it)}</li>`).join('')}</ul>`);
