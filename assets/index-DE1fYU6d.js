@@ -837,95 +837,95 @@ Error generating stack: `+e.message+`
 ビーツについて知っておきたい基本情報は、これで一通りご紹介しました。各セクションを行き来しながら、ぜひあなたの食生活にビーツを取り入れてみてください。
 
 [トップページに戻って他のセクションを見る](/beets-info/)
-`,updatedAt:`2026-05-18`,references:[{label:`ビーツ尿（Beeturia）は多くの人で良性の現象。有病率は約10〜14%で、鉄欠乏や吸収亢進のある人で高頻度`,publisher:`StatPearls（NCBI Bookshelf・査読医学レファレンス, Sauder & Rout 2023）`,url:`https://www.ncbi.nlm.nih.gov/sites/books/n/statpearls/article-18183/`},{label:`尿路結石の食事：水分摂取が最重要、カルシウムは消化管でシュウ酸と結びつき吸収を抑える、高シュウ酸食品（ホウレンソウ等）に注意`,publisher:`米国国立糖尿病・消化器・腎臓病研究所（NIDDK）`,url:`https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-stones/eating-diet-nutrition`},{label:`加熱（ゆで）でビーツ根の総シュウ酸が約67→52mg/100gへ減少（調理法とシュウ酸含量の関係）`,publisher:`International Journal of Food Properties（査読論文 2010）`,url:`https://www.tandfonline.com/doi/full/10.1080/10942910903326056`},{label:`慢性腎臓病（CKD）とカリウム：高カリウム血症があれば高カリウム食品を控える、野菜は「リーチング（ゆでこぼし）」でカリウムを減らせる`,publisher:`米国腎臓財団（National Kidney Foundation）`,url:`https://www.kidney.org/atoz/content/potassium`},{label:`FODMAP（フルクタン等）とIBS：高/低FODMAP食品の考え方`,publisher:`Monash University（FODMAP研究の本家）`,url:`https://www.monashfodmap.com/about-fodmap-and-ibs/high-and-low-fodmap-foods/`}]}],re={basics:[{question:`ビーツの葉も食べられますか？`,answer:`はい、葉と葉柄も食べられます。同じ仲間のスイスチャード（フダンソウ）と同様に、炒め物・スープ・お浸しなどに使えます。若い葉ほどやわらかく、根を収穫する前に間引いた葉も利用できます。アクや土臭さが気になる場合はさっと下茹でをすると食べやすくなります。`},{question:`ビーツは生で食べられますか？`,answer:`食べられます。薄くスライスしたり、すりおろしてサラダに使うと、シャキシャキした食感と土を思わせる独特の風味が楽しめます。皮は薄くむき、切ると赤い汁が出るので、切ったらすぐ使うかレモン汁をふると変色や色移りを抑えられます。`},{question:`ビーツとカブは見た目が似ていますが、同じ仲間ですか？`,answer:`いいえ、見た目は似ていますがまったく別の植物です。カブはアブラナ科、ビーツはヒユ科で、植物としてはホウレンソウや砂糖の原料になるテンサイ（サトウダイコン）に近い仲間です。`},{question:`「ビーツ」「ビートルート」「テーブルビート」「火焔菜」は違うものですか？`,answer:`すべて同じ野菜の別名です。英語では beetroot、和名では火焔菜（かえんさい）やテーブルビートと呼ばれます。砂糖を採るテンサイは同じ種（Beta vulgaris）の別用途の品種で、見た目も用途も異なります。`},{question:`手やまな板がビーツの赤色で染まってしまいます。`,answer:`赤色はベタレインという色素によるもので、多くは水洗いや中性洗剤で落とせます。気になる場合は調理用手袋を使い、まな板にはクッキングシートを敷くと汚れを防げます。衣類についたときは乾く前に早めに水洗いしてください。`}],nutrition:[{question:`ビーツは「飲む輸血」と呼ばれるほど栄養豊富というのは本当ですか？`,answer:`ビーツは葉酸・カリウム・食物繊維・抗酸化色素ベタレインなどを含む栄養価の高い野菜です。ただし「飲む輸血」というのは鮮やかな赤色からの比喩で、鉄分が特別多いわけではありません（鉄分はホウレンソウなどの方が豊富です）。さまざまな食材とのバランスの中で取り入れるのがおすすめです。`},{question:`ビーツの硝酸塩が血圧や運動パフォーマンスに良いと聞きました。本当ですか？`,answer:`ビーツに多く含まれる硝酸塩が体内で一酸化窒素に変わり、血管の働きや持久系運動に関わる可能性が複数の研究で示唆されています。ただし効果には個人差があり、治療や薬の代わりになるものではありません。持病がある方や薬を服用中の方は、取り入れる前に医師にご相談ください。`},{question:`ビーツの糖質やカロリーは高めですか？`,answer:`ビーツは野菜の中ではやや糖質が多め（おおよそ100gあたり7〜9g）で、ほんのり甘みがあります。一方でカロリーは100gあたり約40kcalと高くはありません。糖質を控えたい方は量を意識すると良いでしょう。`},{question:`加熱すると栄養は減ってしまいますか？`,answer:`葉酸やビタミンCなど熱や水に弱い成分は、長時間ゆでると煮汁に流れ出てしまいます。皮ごと蒸す・丸ごとローストする・電子レンジを使うなどの方法だと損失を抑えやすくなります。ゆで汁をスープに活用するのも一つの工夫です。`},{question:`子どもや妊娠中でもビーツを食べられますか？`,answer:`一般的な食品として適量であれば問題ないとされますが、適量や体質には個人差があります。量の目安や注意点は [注意点と副作用](/beets-info/cautions/) のページにまとめています。心配な場合は医師や管理栄養士にご相談ください。`}],cultivation:[{question:`ビーツは家庭菜園やプランターでも育てられますか？`,answer:`育てられます。深さ20cm以上のプランターがあれば栽培可能です。涼しい気候を好むため、春まき（3〜4月）か秋まき（8〜9月）が向いています。真夏・真冬の栽培は避けるのが無難です。`},{question:`種まきから収穫までどのくらいかかりますか？`,answer:`品種や気温によりますが、おおむね60〜90日です。根の直径が5〜7cmほどになったころが収穫の目安。大きくしすぎると「す」が入って食感が落ちるので、採り遅れに注意します。時期の詳細は [旬カレンダー](/beets-info/calendar/) を参照してください。`},{question:`1か所から芽が複数出てきました。間引いた方がよいですか？`,answer:`はい。ビーツの「種」は複数の種子が集まった果実なので、1か所から数本発芽するのが普通です。本葉が出たら元気な1本を残して間引きます。間引いた小さな葉もベビーリーフとして食べられます。`},{question:`国産ビーツの主な産地はどこですか？`,answer:`長野県や熊本県などで栽培されています。生のビーツが多く出回るのは旬にあたる初夏（6〜7月）と晩秋〜初冬（11〜12月）です。それ以外の時期は水煮の輸入品が中心になります。`}],storage:[{question:`ビーツはどのくらい日持ちしますか？`,answer:`生のまま葉を切り落とし、ポリ袋に入れて冷蔵庫の野菜室で保存すると2〜3週間ほどもちます。葉をつけたままだと根の水分が葉に奪われて早くしなびるため、購入後は早めに葉と根を切り分けるのがコツです。`},{question:`ビーツは冷凍できますか？`,answer:`できます。下茹でやローストで火を通してから、使いやすい大きさに切って冷凍するのがおすすめです。生のまま冷凍するより食感や色を保ちやすく、1か月程度を目安に使い切りましょう。`},{question:`切り落とした葉はどう保存すればよいですか？`,answer:`葉は日持ちしないので、買ったら（収穫したら）早めに根から切り分けて別々に保存します。湿らせたキッチンペーパーで包んでポリ袋に入れ、2〜3日以内に調理するのがおすすめです。`},{question:`下茹でしたビーツは保存できますか？`,answer:`皮つきのまま茹でて冷ましたものを密閉容器に入れ、冷蔵で3〜4日が目安です。茹で汁ごと保存すると乾燥や色あせを防げます。それ以上の長期保存は冷凍が向いています。`}],cautions:[{question:`ビーツを食べた後、尿が赤くなったのですが大丈夫ですか？`,answer:`これは「ビーツ尿（Beeturia）」と呼ばれる現象で、ビーツの赤色色素「ベタシアニン」が分解されずに尿として排出されることで起こります。多くの人にとっては無害（良性）な現象とされ、通常1〜2日で自然に元に戻ります。便が黒っぽくなったり、赤い筋が混じるのも同じ理由です。`},{question:`ビーツでシュウ酸による尿路結石になるリスクはありますか？`,answer:`ビーツ（根）には100gあたりおおよそ50〜70mg程度のシュウ酸が含まれると報告されており（品種・測定法で幅あり）、過去に尿路結石になったことがある方や家族歴のある方はリスクが高くなります。対策として、(1) カットしてから茹でこぼす、(2) ヨーグルトやチーズなど乳製品と同時に食べる（腸内でカルシウムと結合させて吸収を防ぐ）、(3) 水分を1日1.5〜2リットル摂取する、の3つが有効です。`},{question:`ビーツを食べてお腹が張ったり下痢になりました。なぜですか？`,answer:`ビーツに含まれる「フルクタン」（FODMAPの一種）が大腸で発酵してガスを発生させるためです。特に過敏性腸症候群（IBS）の方は症状が悪化することがあります。少量（30g程度）から試して、自分の体に合うか確認することをおすすめします。`},{question:`腎臓病でもビーツを食べられますか？`,answer:`ビーツ（根）は生100gあたり約325mg（USDA FoodData Central）と比較的カリウムが多い野菜のため、慢性腎臓病（CKD）や透析中の方は摂取に注意が必要です。腎機能が低下している方は必ず主治医に相談してください。米国腎臓財団（NKF）は、野菜を「リーチング（茹でこぼし）」するとカリウムを一部減らせるとしていますが、自己判断は禁物です。`},{question:`1日にどのくらいのビーツを食べてよいですか？`,answer:`健康な成人は100g程度（中サイズ1/2〜1個分）を週2〜3回が目安です。乳幼児（3歳以上）は30〜50g、妊婦は50g程度、高齢者は70〜100g、低血圧の方は30〜50gまで。シュウ酸の蓄積を避けるため、毎日大量に食べ続けることはおすすめしません。`},{question:`ビーツのベタレイン（色素）は熱に弱いと聞きましたが本当ですか？`,answer:`本当です。ベタレインは熱に弱いため、栄養を最大限に取りたい場合は生のサラダやスムージーで食べるのがおすすめです。加熱する場合も、皮を剥かず・葉のヘタも切らずに丸ごとロースト・蒸す・電子レンジ加熱することで、流出を最小限に抑えられます。`}],recipes:[{question:`ビーツの皮はいつ剥けばよいですか？`,answer:`加熱後に剥くのが鉄則です。生の状態で皮を剥いたり切ったりして茹でると、水溶性のベタシアニン（赤色色素）が水に流れ出て色も栄養も失われます。皮付きのまま丸ごと加熱し、粗熱が取れてから金属スプーンの背などで「こそげ落とす」ようにすれば、包丁不要できれいに剥けます。`},{question:`ビーツを茹でると色が抜けてしまいます。どうすればきれいな赤色を保てますか？`,answer:`3つのコツがあります。(1) 皮付き・ヘタを2.5〜5cm残して丸ごと茹でる、(2) 茹で水1Lに対しお酢かレモン汁を大さじ1加える（ベタシアニンは酸性で安定）、(3) 塩は加熱の初期に入れず、最後の味付け段階で加える。これで色鮮やかに仕上がります。`},{question:`ビーツの葉や茎は食べられますか？`,answer:`食べられます。ホウレンソウの仲間なので、似た使い方ができます。茎はみじん切りにしてごま油・塩・酒・めんつゆで炒め煮にすると佃煮風になります。葉はオリーブオイルとにんにくで炒めたり、スープの仕上げに加えたりすると、彩りも栄養もアップします。`}]};function ie(e){return e.replace(/&/g,`&amp;`).replace(/</g,`&lt;`).replace(/>/g,`&gt;`).replace(/"/g,`&quot;`)}function C(e){return!e||e.length===0?``:`<aside class="references" aria-label="参考にした情報源"><h2 class="references-h">参考にした情報源</h2><ul class="references-list">${e.map(e=>`<li><a href="${ie(e.url)}" target="_blank" rel="noopener noreferrer">${ie(e.label)}</a><span class="ref-pub">${ie(e.publisher)}</span></li>`).join(``)}</ul><p class="references-note">出典は事実確認のために参照したもので、本文は運営者が自分の言葉でまとめています。健康効果には個人差があり、本サイトの情報は医療助言の代替ではありません。</p></aside>`}function ae(e){return e.replace(/&/g,`&amp;`).replace(/</g,`&lt;`).replace(/>/g,`&gt;`).replace(/"/g,`&quot;`)}function oe(e){let t=22+e.length*29+6,n=[];n.push(`<svg viewBox="0 0 582 ${t}" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:560px;height:auto;display:block;margin:0 auto">`);for(let e=0;e<12;e++){let t=84+e*41+41/2;n.push(`<text x="${t}" y="15" text-anchor="middle" font-size="12" fill="#777">${e+1}</text>`)}return e.forEach((e,t)=>{let r=22+t*29;n.push(`<text x="6" y="${r+26/2+4}" font-size="12.5" font-weight="600" fill="#333">${ae(e.label)}</text>`);for(let t=0;t<12;t++){let i=84+t*41,a=e.cells[t]||`#f4ecef`;n.push(`<rect x="${i+1}" y="${r}" width="39" height="26" rx="3" fill="${a}"/>`)}}),n.push(`</svg>`),n.join(`
-`)}var w=`#8B1538`,se=`#d99fb0`,ce=`#6a994e`,le=e=>Array.from({length:12},(t,n)=>e[n+1]??null),ue={"variety-cross-sections":{title:`ビーツの品種別の断面の模式図`,caption:`ビーツは品種によって断面の模様が大きく異なります。デトロイト系は濃い赤でほぼ均一、ゴルゴ（キオッジャ）は赤と白の渦巻き、ゴールデンは黄色で年輪状です。ゴルゴの渦巻きは加熱すると薄れるため、模様を活かすなら生のうす切りがおすすめです。（写真ではなく模式図です）`,svg:`<svg viewBox="0 0 600 250" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:560px;height:auto;display:block;margin:0 auto">
+`,updatedAt:`2026-05-18`,references:[{label:`ビーツ尿（Beeturia）は多くの人で良性の現象。有病率は約10〜14%で、鉄欠乏や吸収亢進のある人で高頻度`,publisher:`StatPearls（NCBI Bookshelf・査読医学レファレンス, Sauder & Rout 2023）`,url:`https://www.ncbi.nlm.nih.gov/sites/books/n/statpearls/article-18183/`},{label:`尿路結石の食事：水分摂取が最重要、カルシウムは消化管でシュウ酸と結びつき吸収を抑える、高シュウ酸食品（ホウレンソウ等）に注意`,publisher:`米国国立糖尿病・消化器・腎臓病研究所（NIDDK）`,url:`https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-stones/eating-diet-nutrition`},{label:`加熱（ゆで）でビーツ根の総シュウ酸が約67→52mg/100gへ減少（調理法とシュウ酸含量の関係）`,publisher:`International Journal of Food Properties（査読論文 2010）`,url:`https://www.tandfonline.com/doi/full/10.1080/10942910903326056`},{label:`慢性腎臓病（CKD）とカリウム：高カリウム血症があれば高カリウム食品を控える、野菜は「リーチング（ゆでこぼし）」でカリウムを減らせる`,publisher:`米国腎臓財団（National Kidney Foundation）`,url:`https://www.kidney.org/atoz/content/potassium`},{label:`FODMAP（フルクタン等）とIBS：高/低FODMAP食品の考え方`,publisher:`Monash University（FODMAP研究の本家）`,url:`https://www.monashfodmap.com/about-fodmap-and-ibs/high-and-low-fodmap-foods/`}]}],re={basics:[{question:`ビーツの葉も食べられますか？`,answer:`はい、葉と葉柄も食べられます。同じ仲間のスイスチャード（フダンソウ）と同様に、炒め物・スープ・お浸しなどに使えます。若い葉ほどやわらかく、根を収穫する前に間引いた葉も利用できます。アクや土臭さが気になる場合はさっと下茹でをすると食べやすくなります。`},{question:`ビーツは生で食べられますか？`,answer:`食べられます。薄くスライスしたり、すりおろしてサラダに使うと、シャキシャキした食感と土を思わせる独特の風味が楽しめます。皮は薄くむき、切ると赤い汁が出るので、切ったらすぐ使うかレモン汁をふると変色や色移りを抑えられます。`},{question:`ビーツとカブは見た目が似ていますが、同じ仲間ですか？`,answer:`いいえ、見た目は似ていますがまったく別の植物です。カブはアブラナ科、ビーツはヒユ科で、植物としてはホウレンソウや砂糖の原料になるテンサイ（サトウダイコン）に近い仲間です。`},{question:`「ビーツ」「ビートルート」「テーブルビート」「火焔菜」は違うものですか？`,answer:`すべて同じ野菜の別名です。英語では beetroot、和名では火焔菜（かえんさい）やテーブルビートと呼ばれます。砂糖を採るテンサイは同じ種（Beta vulgaris）の別用途の品種で、見た目も用途も異なります。`},{question:`手やまな板がビーツの赤色で染まってしまいます。`,answer:`赤色はベタレインという色素によるもので、多くは水洗いや中性洗剤で落とせます。気になる場合は調理用手袋を使い、まな板にはクッキングシートを敷くと汚れを防げます。衣類についたときは乾く前に早めに水洗いしてください。`}],nutrition:[{question:`ビーツは「飲む輸血」と呼ばれるほど栄養豊富というのは本当ですか？`,answer:`ビーツは葉酸・カリウム・食物繊維・抗酸化色素ベタレインなどを含む栄養価の高い野菜です。ただし「飲む輸血」というのは鮮やかな赤色からの比喩で、鉄分が特別多いわけではありません（鉄分はホウレンソウなどの方が豊富です）。さまざまな食材とのバランスの中で取り入れるのがおすすめです。`},{question:`ビーツの硝酸塩が血圧や運動パフォーマンスに良いと聞きました。本当ですか？`,answer:`ビーツに多く含まれる硝酸塩が体内で一酸化窒素に変わり、血管の働きや持久系運動に関わる可能性が複数の研究で示唆されています。ただし効果には個人差があり、治療や薬の代わりになるものではありません。持病がある方や薬を服用中の方は、取り入れる前に医師にご相談ください。`},{question:`ビーツの糖質やカロリーは高めですか？`,answer:`ビーツは野菜の中ではやや糖質が多め（おおよそ100gあたり7〜9g）で、ほんのり甘みがあります。一方でカロリーは100gあたり約40kcalと高くはありません。糖質を控えたい方は量を意識すると良いでしょう。`},{question:`加熱すると栄養は減ってしまいますか？`,answer:`葉酸やビタミンCなど熱や水に弱い成分は、長時間ゆでると煮汁に流れ出てしまいます。皮ごと蒸す・丸ごとローストする・電子レンジを使うなどの方法だと損失を抑えやすくなります。ゆで汁をスープに活用するのも一つの工夫です。`},{question:`子どもや妊娠中でもビーツを食べられますか？`,answer:`一般的な食品として適量であれば問題ないとされますが、適量や体質には個人差があります。量の目安や注意点は [注意点と副作用](/beets-info/cautions/) のページにまとめています。心配な場合は医師や管理栄養士にご相談ください。`}],cultivation:[{question:`ビーツは家庭菜園やプランターでも育てられますか？`,answer:`育てられます。深さ20cm以上のプランターがあれば栽培可能です。涼しい気候を好むため、春まき（3〜4月）か秋まき（8〜9月）が向いています。真夏・真冬の栽培は避けるのが無難です。`},{question:`種まきから収穫までどのくらいかかりますか？`,answer:`品種や気温によりますが、おおむね60〜90日です。根の直径が5〜7cmほどになったころが収穫の目安。大きくしすぎると「す」が入って食感が落ちるので、採り遅れに注意します。時期の詳細は [旬カレンダー](/beets-info/calendar/) を参照してください。`},{question:`1か所から芽が複数出てきました。間引いた方がよいですか？`,answer:`はい。ビーツの「種」は複数の種子が集まった果実なので、1か所から数本発芽するのが普通です。本葉が出たら元気な1本を残して間引きます。間引いた小さな葉もベビーリーフとして食べられます。`},{question:`国産ビーツの主な産地はどこですか？`,answer:`長野県や熊本県などで栽培されています。生のビーツが多く出回るのは旬にあたる初夏（6〜7月）と晩秋〜初冬（11〜12月）です。それ以外の時期は水煮の輸入品が中心になります。`}],storage:[{question:`ビーツはどのくらい日持ちしますか？`,answer:`生のまま葉を切り落とし、ポリ袋に入れて冷蔵庫の野菜室で保存すると2〜3週間ほどもちます。葉をつけたままだと根の水分が葉に奪われて早くしなびるため、購入後は早めに葉と根を切り分けるのがコツです。`},{question:`ビーツは冷凍できますか？`,answer:`できます。下茹でやローストで火を通してから、使いやすい大きさに切って冷凍するのがおすすめです。生のまま冷凍するより食感や色を保ちやすく、1か月程度を目安に使い切りましょう。`},{question:`切り落とした葉はどう保存すればよいですか？`,answer:`葉は日持ちしないので、買ったら（収穫したら）早めに根から切り分けて別々に保存します。湿らせたキッチンペーパーで包んでポリ袋に入れ、2〜3日以内に調理するのがおすすめです。`},{question:`下茹でしたビーツは保存できますか？`,answer:`皮つきのまま茹でて冷ましたものを密閉容器に入れ、冷蔵で3〜4日が目安です。茹で汁ごと保存すると乾燥や色あせを防げます。それ以上の長期保存は冷凍が向いています。`}],cautions:[{question:`ビーツを食べた後、尿が赤くなったのですが大丈夫ですか？`,answer:`これは「ビーツ尿（Beeturia）」と呼ばれる現象で、ビーツの赤色色素「ベタシアニン」が分解されずに尿として排出されることで起こります。多くの人にとっては無害（良性）な現象とされ、通常1〜2日で自然に元に戻ります。便が黒っぽくなったり、赤い筋が混じるのも同じ理由です。`},{question:`ビーツでシュウ酸による尿路結石になるリスクはありますか？`,answer:`ビーツ（根）には100gあたりおおよそ50〜70mg程度のシュウ酸が含まれると報告されており（品種・測定法で幅あり）、過去に尿路結石になったことがある方や家族歴のある方はリスクが高くなります。対策として、(1) カットしてから茹でこぼす、(2) ヨーグルトやチーズなど乳製品と同時に食べる（腸内でカルシウムと結合させて吸収を防ぐ）、(3) 水分を1日1.5〜2リットル摂取する、の3つが有効です。`},{question:`ビーツを食べてお腹が張ったり下痢になりました。なぜですか？`,answer:`ビーツに含まれる「フルクタン」（FODMAPの一種）が大腸で発酵してガスを発生させるためです。特に過敏性腸症候群（IBS）の方は症状が悪化することがあります。少量（30g程度）から試して、自分の体に合うか確認することをおすすめします。`},{question:`腎臓病でもビーツを食べられますか？`,answer:`ビーツ（根）は生100gあたり約325mg（USDA FoodData Central）と比較的カリウムが多い野菜のため、慢性腎臓病（CKD）や透析中の方は摂取に注意が必要です。腎機能が低下している方は必ず主治医に相談してください。米国腎臓財団（NKF）は、野菜を「リーチング（茹でこぼし）」するとカリウムを一部減らせるとしていますが、自己判断は禁物です。`},{question:`1日にどのくらいのビーツを食べてよいですか？`,answer:`健康な成人は100g程度（中サイズ1/2〜1個分）を週2〜3回が目安です。乳幼児（3歳以上）は30〜50g、妊婦は50g程度、高齢者は70〜100g、低血圧の方は30〜50gまで。シュウ酸の蓄積を避けるため、毎日大量に食べ続けることはおすすめしません。`},{question:`ビーツのベタレイン（色素）は熱に弱いと聞きましたが本当ですか？`,answer:`本当です。ベタレインは熱に弱いため、栄養を最大限に取りたい場合は生のサラダやスムージーで食べるのがおすすめです。加熱する場合も、皮を剥かず・葉のヘタも切らずに丸ごとロースト・蒸す・電子レンジ加熱することで、流出を最小限に抑えられます。`}],recipes:[{question:`ビーツの皮はいつ剥けばよいですか？`,answer:`加熱後に剥くのが鉄則です。生の状態で皮を剥いたり切ったりして茹でると、水溶性のベタシアニン（赤色色素）が水に流れ出て色も栄養も失われます。皮付きのまま丸ごと加熱し、粗熱が取れてから金属スプーンの背などで「こそげ落とす」ようにすれば、包丁不要できれいに剥けます。`},{question:`ビーツを茹でると色が抜けてしまいます。どうすればきれいな赤色を保てますか？`,answer:`3つのコツがあります。(1) 皮付き・ヘタを2.5〜5cm残して丸ごと茹でる、(2) 茹で水1Lに対しお酢かレモン汁を大さじ1加える（ベタシアニンは酸性で安定）、(3) 塩は加熱の初期に入れず、最後の味付け段階で加える。これで色鮮やかに仕上がります。`},{question:`ビーツの葉や茎は食べられますか？`,answer:`食べられます。ホウレンソウの仲間なので、似た使い方ができます。茎はみじん切りにしてごま油・塩・酒・めんつゆで炒め煮にすると佃煮風になります。葉はオリーブオイルとにんにくで炒めたり、スープの仕上げに加えたりすると、彩りも栄養もアップします。`}]};function ie(e){return e.replace(/&/g,`&amp;`).replace(/</g,`&lt;`).replace(/>/g,`&gt;`).replace(/"/g,`&quot;`)}function C(e){return!e||e.length===0?``:`<aside class="references" aria-label="参考にした情報源"><h2 class="references-h">参考にした情報源</h2><ul class="references-list">${e.map(e=>`<li><a href="${ie(e.url)}" target="_blank" rel="noopener noreferrer">${ie(e.label)}</a><span class="ref-pub">${ie(e.publisher)}</span></li>`).join(``)}</ul><p class="references-note">出典は事実確認のために参照したもので、本文は運営者が自分の言葉でまとめています。健康効果には個人差があり、本サイトの情報は医療助言の代替ではありません。</p></aside>`}function ae(e){return e.replace(/&/g,`&amp;`).replace(/</g,`&lt;`).replace(/>/g,`&gt;`).replace(/"/g,`&quot;`)}function oe(e){let t=24+e.length*31+6,n=[];n.push(`<svg viewBox="0 0 370 ${t}" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:420px;height:auto;display:block;margin:0 auto">`);for(let e=0;e<12;e++){let t=100+e*22+22/2;n.push(`<text x="${t}" y="17" text-anchor="middle" font-size="15" fill="#777">${e+1}</text>`)}return e.forEach((e,t)=>{let r=24+t*31;n.push(`<text x="6" y="${r+28/2+5}" font-size="15" font-weight="600" fill="#333">${ae(e.label)}</text>`);for(let t=0;t<12;t++){let i=100+t*22,a=e.cells[t]||`#f4ecef`;n.push(`<rect x="${i+1}" y="${r}" width="20" height="28" rx="3" fill="${a}"/>`)}}),n.push(`</svg>`),n.join(`
+`)}var w=`#8B1538`,se=`#d99fb0`,ce=`#6a994e`,le=e=>Array.from({length:12},(t,n)=>e[n+1]??null),ue={"variety-cross-sections":{title:`ビーツの品種別の断面の模式図`,caption:`ビーツは品種によって断面の模様が大きく異なります。デトロイト系は濃い赤でほぼ均一、ゴルゴ（キオッジャ）は赤と白の渦巻き、ゴールデンは黄色で年輪状です。ゴルゴの渦巻きは加熱すると薄れるため、模様を活かすなら生のうす切りがおすすめです。（写真ではなく模式図です）`,svg:`<svg viewBox="0 0 460 185" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:420px;height:auto;display:block;margin:0 auto">
   <g>
-    <circle cx="110" cy="100" r="78" fill="#5e0f26"/>
-    <circle cx="110" cy="100" r="71" fill="#8B1538"/>
-    <circle cx="110" cy="100" r="54" fill="none" stroke="#6d1230" stroke-width="2" opacity="0.5"/>
-    <circle cx="110" cy="100" r="36" fill="none" stroke="#6d1230" stroke-width="2" opacity="0.5"/>
-    <circle cx="110" cy="100" r="18" fill="none" stroke="#6d1230" stroke-width="2" opacity="0.5"/>
-    <circle cx="110" cy="100" r="78" fill="none" stroke="#00000022" stroke-width="1"/>
-    <text x="110" y="205" text-anchor="middle" font-size="15" font-weight="700" fill="#333">デトロイト</text>
-    <text x="110" y="225" text-anchor="middle" font-size="12" fill="#555">濃い赤・ほぼ均一</text>
+    <circle cx="85" cy="70" r="55" fill="#5e0f26"/>
+    <circle cx="85" cy="70" r="50" fill="#8B1538"/>
+    <circle cx="85" cy="70" r="38" fill="none" stroke="#6d1230" stroke-width="2" opacity="0.5"/>
+    <circle cx="85" cy="70" r="25" fill="none" stroke="#6d1230" stroke-width="2" opacity="0.5"/>
+    <circle cx="85" cy="70" r="13" fill="none" stroke="#6d1230" stroke-width="2" opacity="0.5"/>
+    <circle cx="85" cy="70" r="55" fill="none" stroke="#00000022" stroke-width="1"/>
+    <text x="85" y="144" text-anchor="middle" font-size="20" font-weight="700" fill="#333">デトロイト</text>
+    <text x="85" y="162" text-anchor="middle" font-size="18" fill="#555">濃い赤・ほぼ均一</text>
   </g>
   <g>
-    <circle cx="300" cy="100" r="78" fill="#a3284a"/>
-    <circle cx="300" cy="100" r="70" fill="#c33a5e"/>
-    <circle cx="300" cy="100" r="58" fill="#fce8ee"/>
-    <circle cx="300" cy="100" r="46" fill="#c33a5e"/>
-    <circle cx="300" cy="100" r="34" fill="#fce8ee"/>
-    <circle cx="300" cy="100" r="22" fill="#c33a5e"/>
-    <circle cx="300" cy="100" r="10" fill="#fce8ee"/>
-    <circle cx="300" cy="100" r="78" fill="none" stroke="#00000022" stroke-width="1"/>
-    <text x="300" y="205" text-anchor="middle" font-size="15" font-weight="700" fill="#333">ゴルゴ</text>
-    <text x="300" y="225" text-anchor="middle" font-size="12" fill="#555">赤白の渦巻き</text>
+    <circle cx="235" cy="70" r="55" fill="#a3284a"/>
+    <circle cx="235" cy="70" r="49" fill="#c33a5e"/>
+    <circle cx="235" cy="70" r="41" fill="#fce8ee"/>
+    <circle cx="235" cy="70" r="32" fill="#c33a5e"/>
+    <circle cx="235" cy="70" r="24" fill="#fce8ee"/>
+    <circle cx="235" cy="70" r="16" fill="#c33a5e"/>
+    <circle cx="235" cy="70" r="7" fill="#fce8ee"/>
+    <circle cx="235" cy="70" r="55" fill="none" stroke="#00000022" stroke-width="1"/>
+    <text x="235" y="144" text-anchor="middle" font-size="20" font-weight="700" fill="#333">ゴルゴ</text>
+    <text x="235" y="162" text-anchor="middle" font-size="18" fill="#555">赤白の渦巻き</text>
   </g>
   <g>
-    <circle cx="490" cy="100" r="78" fill="#cf7a1f"/>
-    <circle cx="490" cy="100" r="70" fill="#f1c44d"/>
-    <circle cx="490" cy="100" r="54" fill="none" stroke="#d9a93b" stroke-width="2" opacity="0.6"/>
-    <circle cx="490" cy="100" r="36" fill="none" stroke="#d9a93b" stroke-width="2" opacity="0.6"/>
-    <circle cx="490" cy="100" r="18" fill="none" stroke="#d9a93b" stroke-width="2" opacity="0.6"/>
-    <circle cx="490" cy="100" r="78" fill="none" stroke="#00000022" stroke-width="1"/>
-    <text x="490" y="205" text-anchor="middle" font-size="15" font-weight="700" fill="#333">ゴールデン</text>
-    <text x="490" y="225" text-anchor="middle" font-size="12" fill="#555">黄色・年輪</text>
+    <circle cx="385" cy="70" r="55" fill="#cf7a1f"/>
+    <circle cx="385" cy="70" r="49" fill="#f1c44d"/>
+    <circle cx="385" cy="70" r="38" fill="none" stroke="#d9a93b" stroke-width="2" opacity="0.6"/>
+    <circle cx="385" cy="70" r="25" fill="none" stroke="#d9a93b" stroke-width="2" opacity="0.6"/>
+    <circle cx="385" cy="70" r="13" fill="none" stroke="#d9a93b" stroke-width="2" opacity="0.6"/>
+    <circle cx="385" cy="70" r="55" fill="none" stroke="#00000022" stroke-width="1"/>
+    <text x="385" y="144" text-anchor="middle" font-size="20" font-weight="700" fill="#333">ゴールデン</text>
+    <text x="385" y="162" text-anchor="middle" font-size="18" fill="#555">黄色・年輪</text>
   </g>
-</svg>`},"nitrate-no-flow":{title:`ビーツの硝酸塩が一酸化窒素になり血管を広げるまでの流れ図`,caption:`ビーツに多い硝酸塩は、口の中の細菌や体内のはたらきで一酸化窒素（NO）に変わります。NOには血管をゆるめて広げる作用があり、血圧の低下などが報告されています。（写真ではなく模式図です）`,svg:`<svg viewBox="0 0 440 360" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:420px;height:auto;display:block;margin:0 auto">
-  <rect x="20" y="8" width="400" height="64" rx="10" fill="#fbeef2" stroke="#d59bac" stroke-width="1.5"/>
-  <text x="220" y="46" text-anchor="middle" font-size="16" font-weight="700" fill="#5e0f26">ビーツの硝酸塩（NO₃⁻）</text>
-  <path d="M220 74 L220 90" stroke="#a01744" stroke-width="2"/>
-  <path d="M220 96 l-6 -9 h12 z" fill="#a01744"/>
-  <rect x="20" y="98" width="400" height="64" rx="10" fill="#fbeef2" stroke="#d59bac" stroke-width="1.5"/>
-  <text x="220" y="136" text-anchor="middle" font-size="15" font-weight="600" fill="#5e0f26">口の中の細菌が亜硝酸塩（NO₂⁻）に変える</text>
-  <path d="M220 164 L220 180" stroke="#a01744" stroke-width="2"/>
-  <path d="M220 186 l-6 -9 h12 z" fill="#a01744"/>
-  <rect x="20" y="188" width="400" height="64" rx="10" fill="#fbeef2" stroke="#d59bac" stroke-width="1.5"/>
-  <text x="220" y="226" text-anchor="middle" font-size="16" font-weight="700" fill="#5e0f26">体内で一酸化窒素（NO）になる</text>
-  <path d="M220 254 L220 270" stroke="#a01744" stroke-width="2"/>
-  <path d="M220 276 l-6 -9 h12 z" fill="#a01744"/>
-  <rect x="20" y="278" width="400" height="70" rx="10" fill="#8B1538"/>
-  <text x="220" y="310" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">血管が広がる</text>
-  <text x="220" y="332" text-anchor="middle" font-size="14" fill="#ffd9e3">血圧の低下・血流のサポート</text>
-</svg>`},"storage-duration":{title:`ビーツの保存方法ごとの日持ちの目安の棒グラフ`,caption:`ビーツの保存方法ごとの日持ちのおおよその目安です（保存状態により前後します）。冷凍がもっとも長く約3か月、生のままの冷蔵は2〜3週間、加熱後は約1週間が目安です。（模式図）`,svg:`<svg viewBox="0 0 600 215" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:560px;height:auto;display:block;margin:0 auto">
-  <line x1="150" y1="8" x2="150" y2="195" stroke="#e7d6da" stroke-width="1"/>
-  <text x="8" y="38" font-size="14" font-weight="600" fill="#333">加熱後・冷蔵</text>
-  <rect x="150" y="20" width="28" height="30" rx="3" fill="#c98aa0"/>
-  <text x="186" y="40" font-size="13" fill="#555">約1週間</text>
-  <text x="8" y="86" font-size="14" font-weight="600" fill="#333">生・冷蔵</text>
-  <rect x="150" y="68" width="69" height="30" rx="3" fill="#b25c79"/>
-  <text x="227" y="88" font-size="13" fill="#555">2〜3週間</text>
-  <text x="8" y="134" font-size="14" font-weight="600" fill="#333">ピクルス</text>
-  <rect x="150" y="116" width="118" height="30" rx="3" fill="#9c3358"/>
-  <text x="276" y="136" font-size="13" fill="#555">1ヶ月以上</text>
-  <text x="8" y="182" font-size="14" font-weight="600" fill="#333">冷凍</text>
-  <rect x="150" y="164" width="330" height="30" rx="3" fill="#8B1538"/>
-  <text x="488" y="184" font-size="13" fill="#555">約3ヶ月</text>
-</svg>`},"seasonal-calendar":{title:`ビーツの種まき・収穫・入手しやすさの月別カレンダー`,caption:`緑＝種まきの目安、濃い赤＝収穫・旬（生が出回りやすい）、淡い赤＝早採り・終盤や中程度。ビーツは春まき（初夏どり）と秋まき（晩秋〜冬どり）で旬が年2回あります。地域・品種で前後する目安です。`,svg:oe([{label:`種まき`,cells:le({3:ce,4:ce,8:ce,9:ce})},{label:`収穫・旬`,cells:le({1:se,5:se,6:w,7:w,10:se,11:w,12:w})},{label:`入手しやすさ`,cells:le({1:se,5:se,6:w,7:w,10:se,11:w,12:w})}])},"region-harvest":{title:`日本の主要産地別のビーツの主な収穫時期`,caption:`主な産地ごとの収穫時期の目安です（濃い赤＝収穫期）。北海道・長野は夏〜秋、熊本・京都は晩秋〜冬・春先、兵庫はほぼ通年。ほかに埼玉などで春・秋の小規模生産もあります。年や品種により前後します。`,svg:oe([{label:`北海道`,cells:le({7:w,8:w,9:w,10:w,11:w})},{label:`長野`,cells:le({6:w,7:w,8:w,9:w,10:w})},{label:`熊本`,cells:le({11:w,12:w,1:w,2:w})},{label:`京都`,cells:le({11:w,12:w,1:w,2:w,3:w})},{label:`兵庫`,cells:le({1:w,2:w,3:w,4:w,5:w,6:w,7:w,8:w,9:w,10:w,11:w,12:w})}])},"oxalate-calcium":{title:`シュウ酸がカルシウムと結びつく場所による結石リスクの違い`,caption:`シュウ酸は、カルシウムを多く含む食材と一緒に食べると腸の中で結びつき、吸収されずに排出されます。単独で多くとると腸から吸収され、腎臓でカルシウムと結びついて結石の原因になることがあります。ビーツに乳製品などを合わせるのは、この点で理にかなっています。（写真ではなく模式図です）`,svg:`<svg viewBox="0 0 440 470" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:420px;height:auto;display:block;margin:0 auto">
-  <rect x="20" y="8" width="400" height="30" rx="6" fill="#6a994e"/>
-  <text x="220" y="28" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">カルシウムと一緒に食べると</text>
-  <rect x="20" y="46" width="400" height="44" rx="8" fill="#eef4e8" stroke="#a7c293" stroke-width="1.5"/>
-  <text x="220" y="73" text-anchor="middle" font-size="14.5" fill="#2f5233">シュウ酸 ＋ カルシウム（食品）</text>
-  <path d="M220 90 L220 105" stroke="#6a994e" stroke-width="2"/>
-  <path d="M220 110 l-6 -8 h12 z" fill="#6a994e"/>
-  <rect x="20" y="112" width="400" height="44" rx="8" fill="#eef4e8" stroke="#a7c293" stroke-width="1.5"/>
-  <text x="220" y="139" text-anchor="middle" font-size="14.5" fill="#2f5233">腸の中で結びつき、吸収されない</text>
-  <path d="M220 156 L220 171" stroke="#6a994e" stroke-width="2"/>
-  <path d="M220 176 l-6 -8 h12 z" fill="#6a994e"/>
-  <rect x="20" y="178" width="400" height="46" rx="8" fill="#386641"/>
-  <text x="220" y="206" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff">便として排出。結石になりにくい</text>
-  <rect x="20" y="244" width="400" height="30" rx="6" fill="#8B1538"/>
-  <text x="220" y="264" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">シュウ酸だけ・とりすぎると</text>
-  <rect x="20" y="282" width="400" height="44" rx="8" fill="#fbeef2" stroke="#d59bac" stroke-width="1.5"/>
-  <text x="220" y="309" text-anchor="middle" font-size="14.5" fill="#8B1538">シュウ酸が腸から吸収される</text>
-  <path d="M220 326 L220 341" stroke="#a01744" stroke-width="2"/>
-  <path d="M220 346 l-6 -8 h12 z" fill="#a01744"/>
-  <rect x="20" y="348" width="400" height="44" rx="8" fill="#fbeef2" stroke="#d59bac" stroke-width="1.5"/>
-  <text x="220" y="375" text-anchor="middle" font-size="14.5" fill="#8B1538">腎臓でカルシウムと結びつく</text>
-  <path d="M220 392 L220 407" stroke="#a01744" stroke-width="2"/>
-  <path d="M220 412 l-6 -8 h12 z" fill="#a01744"/>
-  <rect x="20" y="414" width="400" height="46" rx="8" fill="#8B1538"/>
-  <text x="220" y="442" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff">シュウ酸カルシウムの結石に</text>
+</svg>`},"nitrate-no-flow":{title:`ビーツの硝酸塩が一酸化窒素になり血管を広げるまでの流れ図`,caption:`ビーツに多い硝酸塩は、口の中の細菌や体内のはたらきで一酸化窒素（NO）に変わります。NOには血管をゆるめて広げる作用があり、血圧の低下などが報告されています。（写真ではなく模式図です）`,svg:`<svg viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:340px;height:auto;display:block;margin:0 auto">
+  <rect x="20" y="8" width="320" height="64" rx="10" fill="#fbeef2" stroke="#d59bac" stroke-width="1.5"/>
+  <text x="180" y="46" text-anchor="middle" font-size="16" font-weight="700" fill="#5e0f26">ビーツの硝酸塩（NO₃⁻）</text>
+  <path d="M180 74 L180 90" stroke="#a01744" stroke-width="2"/>
+  <path d="M180 96 l-6 -9 h12 z" fill="#a01744"/>
+  <rect x="20" y="98" width="320" height="64" rx="10" fill="#fbeef2" stroke="#d59bac" stroke-width="1.5"/>
+  <text x="180" y="136" text-anchor="middle" font-size="15" font-weight="600" fill="#5e0f26">口の中の細菌が亜硝酸塩（NO₂⁻）に変える</text>
+  <path d="M180 164 L180 180" stroke="#a01744" stroke-width="2"/>
+  <path d="M180 186 l-6 -9 h12 z" fill="#a01744"/>
+  <rect x="20" y="188" width="320" height="64" rx="10" fill="#fbeef2" stroke="#d59bac" stroke-width="1.5"/>
+  <text x="180" y="226" text-anchor="middle" font-size="16" font-weight="700" fill="#5e0f26">体内で一酸化窒素（NO）になる</text>
+  <path d="M180 254 L180 270" stroke="#a01744" stroke-width="2"/>
+  <path d="M180 276 l-6 -9 h12 z" fill="#a01744"/>
+  <rect x="20" y="278" width="320" height="70" rx="10" fill="#8B1538"/>
+  <text x="180" y="310" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">血管が広がる</text>
+  <text x="180" y="332" text-anchor="middle" font-size="14" fill="#ffd9e3">血圧の低下・血流のサポート</text>
+</svg>`},"storage-duration":{title:`ビーツの保存方法ごとの日持ちの目安の棒グラフ`,caption:`ビーツの保存方法ごとの日持ちのおおよその目安です（保存状態により前後します）。冷凍がもっとも長く約3か月、生のままの冷蔵は2〜3週間、加熱後は約1週間が目安です。（模式図）`,svg:`<svg viewBox="0 0 425 215" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:400px;height:auto;display:block;margin:0 auto">
+  <line x1="115" y1="8" x2="115" y2="195" stroke="#e7d6da" stroke-width="1"/>
+  <text x="8" y="38" font-size="17" font-weight="600" fill="#333">加熱後・冷蔵</text>
+  <rect x="115" y="20" width="19" height="30" rx="3" fill="#c98aa0"/>
+  <text x="142" y="40" font-size="17" fill="#555">約1週間</text>
+  <text x="8" y="86" font-size="17" font-weight="600" fill="#333">生・冷蔵</text>
+  <rect x="115" y="68" width="46" height="30" rx="3" fill="#b25c79"/>
+  <text x="169" y="88" font-size="17" fill="#555">2〜3週間</text>
+  <text x="8" y="134" font-size="17" font-weight="600" fill="#333">ピクルス</text>
+  <rect x="115" y="116" width="79" height="30" rx="3" fill="#9c3358"/>
+  <text x="202" y="136" font-size="17" fill="#555">1ヶ月以上</text>
+  <text x="8" y="182" font-size="17" font-weight="600" fill="#333">冷凍</text>
+  <rect x="115" y="164" width="220" height="30" rx="3" fill="#8B1538"/>
+  <text x="343" y="184" font-size="17" fill="#555">約3ヶ月</text>
+</svg>`},"seasonal-calendar":{title:`ビーツの種まき・収穫・入手しやすさの月別カレンダー`,caption:`緑＝種まきの目安、濃い赤＝収穫・旬（生が出回りやすい）、淡い赤＝早採り・終盤や中程度。ビーツは春まき（初夏どり）と秋まき（晩秋〜冬どり）で旬が年2回あります。地域・品種で前後する目安です。`,svg:oe([{label:`種まき`,cells:le({3:ce,4:ce,8:ce,9:ce})},{label:`収穫・旬`,cells:le({1:se,5:se,6:w,7:w,10:se,11:w,12:w})},{label:`入手しやすさ`,cells:le({1:se,5:se,6:w,7:w,10:se,11:w,12:w})}])},"region-harvest":{title:`日本の主要産地別のビーツの主な収穫時期`,caption:`主な産地ごとの収穫時期の目安です（濃い赤＝収穫期）。北海道・長野は夏〜秋、熊本・京都は晩秋〜冬・春先、兵庫はほぼ通年。ほかに埼玉などで春・秋の小規模生産もあります。年や品種により前後します。`,svg:oe([{label:`北海道`,cells:le({7:w,8:w,9:w,10:w,11:w})},{label:`長野`,cells:le({6:w,7:w,8:w,9:w,10:w})},{label:`熊本`,cells:le({11:w,12:w,1:w,2:w})},{label:`京都`,cells:le({11:w,12:w,1:w,2:w,3:w})},{label:`兵庫`,cells:le({1:w,2:w,3:w,4:w,5:w,6:w,7:w,8:w,9:w,10:w,11:w,12:w})}])},"oxalate-calcium":{title:`シュウ酸がカルシウムと結びつく場所による結石リスクの違い`,caption:`シュウ酸は、カルシウムを多く含む食材と一緒に食べると腸の中で結びつき、吸収されずに排出されます。単独で多くとると腸から吸収され、腎臓でカルシウムと結びついて結石の原因になることがあります。ビーツに乳製品などを合わせるのは、この点で理にかなっています。（写真ではなく模式図です）`,svg:`<svg viewBox="0 0 360 470" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:340px;height:auto;display:block;margin:0 auto">
+  <rect x="20" y="8" width="320" height="30" rx="6" fill="#6a994e"/>
+  <text x="180" y="28" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">カルシウムと一緒に食べると</text>
+  <rect x="20" y="46" width="320" height="44" rx="8" fill="#eef4e8" stroke="#a7c293" stroke-width="1.5"/>
+  <text x="180" y="73" text-anchor="middle" font-size="14.5" fill="#2f5233">シュウ酸 ＋ カルシウム（食品）</text>
+  <path d="M180 90 L180 105" stroke="#6a994e" stroke-width="2"/>
+  <path d="M180 110 l-6 -8 h12 z" fill="#6a994e"/>
+  <rect x="20" y="112" width="320" height="44" rx="8" fill="#eef4e8" stroke="#a7c293" stroke-width="1.5"/>
+  <text x="180" y="139" text-anchor="middle" font-size="14.5" fill="#2f5233">腸の中で結びつき、吸収されない</text>
+  <path d="M180 156 L180 171" stroke="#6a994e" stroke-width="2"/>
+  <path d="M180 176 l-6 -8 h12 z" fill="#6a994e"/>
+  <rect x="20" y="178" width="320" height="46" rx="8" fill="#386641"/>
+  <text x="180" y="206" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff">便として排出。結石になりにくい</text>
+  <rect x="20" y="244" width="320" height="30" rx="6" fill="#8B1538"/>
+  <text x="180" y="264" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">シュウ酸だけ・とりすぎると</text>
+  <rect x="20" y="282" width="320" height="44" rx="8" fill="#fbeef2" stroke="#d59bac" stroke-width="1.5"/>
+  <text x="180" y="309" text-anchor="middle" font-size="14.5" fill="#8B1538">シュウ酸が腸から吸収される</text>
+  <path d="M180 326 L180 341" stroke="#a01744" stroke-width="2"/>
+  <path d="M180 346 l-6 -8 h12 z" fill="#a01744"/>
+  <rect x="20" y="348" width="320" height="44" rx="8" fill="#fbeef2" stroke="#d59bac" stroke-width="1.5"/>
+  <text x="180" y="375" text-anchor="middle" font-size="14.5" fill="#8B1538">腎臓でカルシウムと結びつく</text>
+  <path d="M180 392 L180 407" stroke="#a01744" stroke-width="2"/>
+  <path d="M180 412 l-6 -8 h12 z" fill="#a01744"/>
+  <rect x="20" y="414" width="320" height="46" rx="8" fill="#8B1538"/>
+  <text x="180" y="442" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff">シュウ酸カルシウムの結石に</text>
 </svg>`}};function T(e){let t=ue[e];return t?`<figure class="content-figure"><div class="figure-svg" role="img" aria-label="${ae(t.title)}">${t.svg}</div><figcaption class="figure-caption">${ae(t.caption)}</figcaption></figure>`:null}var E=[{term:`ベタレイン`,reading:`ベタレイン`,description:`ビーツの鮮やかな赤紫色を作っている水溶性の天然色素。ベタシアニン（赤色系）とベタキサンチン（黄色系）の総称。サボテン科の植物にも含まれる、植物界では珍しい色素グループ。強力な抗酸化作用が報告されている。`,relatedSectionId:`nutrition`},{term:`ベタシアニン`,description:`ベタレインのうち赤紫色を担う色素。水溶性で熱・アルカリ・金属イオンに弱く、加熱や切断により流出しやすい。皮付き加熱が推奨される理由のひとつ。`,relatedSectionId:`recipes`},{term:`ベタイン`,description:`ビーツに豊富に含まれる含窒素化合物。肝臓での脂質蓄積を抑える、ホモシステインを低減するなどの作用が報告されている。化粧品では保湿成分としても利用される。`,relatedSectionId:`nutrition`},{term:`硝酸塩`,reading:`しょうさんえん`,description:`ビーツに豊富に含まれる無機イオン（NO₃⁻）。経口摂取後、口腔内細菌や胃酸の働きで一酸化窒素（NO）に変換され、血管拡張・血圧低下・運動パフォーマンス向上などの作用をもたらす。`,relatedSectionId:`nutrition`},{term:`一酸化窒素（NO）`,reading:`いっさんかちっそ`,description:`血管平滑筋に作用し血管を拡張させる生理活性物質。ビーツの硝酸塩から体内で生成される。血流改善・血圧低下・運動効率向上に関与する。`,relatedSectionId:`nutrition`},{term:`シュウ酸`,reading:`しゅうさん`,description:`ビーツやホウレンソウに含まれるカルボン酸の一種。尿中でカルシウムと結合して結晶（シュウ酸カルシウム）となり、尿路結石の原因になることがある。茹でこぼし・乳製品との同時摂取で吸収を抑えられる。`,relatedSectionId:`cautions`},{term:`ビーツ尿`,reading:`ビーツにょう`,description:`ビーツ摂取後に尿がピンク〜赤褐色に変色する生理的現象（医学用語：Beeturia）。ベタシアニンが分解されずに尿中へ排出されるために起こる。多くの人にとっては無害（良性）とされ、通常1〜2日で元に戻る。`,relatedSectionId:`cautions`},{term:`FODMAP`,reading:`フォドマップ`,description:`小腸で吸収されにくく大腸で発酵を起こす糖質群の総称（Fermentable Oligo-, Di-, Mono-saccharides And Polyols）。過敏性腸症候群（IBS）患者では症状の原因になりうる。ビーツに含まれるフルクタンも該当する。`,relatedSectionId:`cautions`},{term:`フルクタン`,description:`果糖（フルクトース）が連なった多糖類。ヒトの小腸では消化できず大腸で発酵してガスを発生させる。FODMAPの一種で、IBSの方は注意が必要。`,relatedSectionId:`cautions`},{term:`高カリウム血症`,reading:`こうカリウムけっしょう`,description:`血中カリウム濃度が高くなりすぎた状態。腎機能低下時に発症リスクが高い。重症化すると不整脈など心臓への影響を招くことがあり、医療上の緊急事態とされる。ビーツ（根）は生100gあたり約325mg（USDA）と比較的カリウムが多いため、腎臓病の方は摂取に注意し主治医に相談する。`,relatedSectionId:`cautions`},{term:`テーブルビート`,description:`食用ビーツの正式名称のひとつ。観賞用や砂糖原料用と区別するため、英語圏では「table beet」と呼ぶ。本サイトの「ビーツ」はテーブルビート（Beta vulgaris Garden Beet Group）を指す。`,relatedSectionId:`basics`},{term:`テンサイ`,reading:`てんさい`,description:`ビーツと同じ Beta vulgaris に属するが、根に砂糖（ショ糖）を蓄積するよう改良された品種群。日本では北海道で大規模栽培され、てん菜糖の原料となる。`,relatedSectionId:`basics`},{term:`スイスチャード`,description:`ビーツと同じ Beta vulgaris に属する葉菜用品種。葉と肉厚の葉柄を食用にする。カラフルな葉柄が彩り野菜として人気。和名は「フダンソウ」。`,relatedSectionId:`basics`},{term:`火焔菜`,reading:`かえんさい`,description:`ビーツの和名。江戸時代に日本に伝わったとき、燃え盛る炎のような赤色から名付けられた。当初は観賞用として愛でられていた。`,relatedSectionId:`basics`},{term:`ジオスミン`,description:`ビーツの土特有の香りを生み出す有機化合物。土壌中の放線菌などが生成し、ビーツの根に蓄積する。雨上がりの土の匂いの正体でもある。`,relatedSectionId:`basics`},{term:`エルゴジェニックエイド`,description:`運動パフォーマンスを向上させる目的で使用される物質や手段の総称。ビーツの硝酸塩は天然のエルゴジェニックエイドとして、持久系競技者に活用されている。`,relatedSectionId:`nutrition`}],de=`本サイト「ビーツの基本ガイド」は、ビーツ（テーブルビート）に興味を持った方が、まずひととおりの情報に触れられるようにまとめたリファレンスサイトです。植物としての特徴、栄養、産地、調理、保存、注意点までを家庭目線で紹介しています。
 
 本サイトの内容は一般的な情報提供を目的としており、医学的診断・治療・予防のための助言を構成するものではありません。健康上の懸念がある方は医師または管理栄養士にご相談ください。
