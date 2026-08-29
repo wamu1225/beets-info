@@ -12,21 +12,21 @@ function esc(s: string): string {
 // rows[].cells は長さ12（1月→12月）。各要素は塗り色、または null（空セル）。
 type GridRow = { label: string; cells: (string | null)[] };
 function monthGridSvg(rows: GridRow[]): string {
-  const labelW = 84, cellW = 41, cellH = 26, gap = 3, headerH = 22, pad = 6;
+  const labelW = 100, cellW = 22, cellH = 28, gap = 3, headerH = 24, pad = 6;
   const x0 = labelW;
   const W = labelW + 12 * cellW + pad;
   const H = headerH + rows.length * (cellH + gap) + pad;
   const parts: string[] = [];
   parts.push(
-    `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:560px;height:auto;display:block;margin:0 auto">`
+    `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:420px;height:auto;display:block;margin:0 auto">`
   );
   for (let m = 0; m < 12; m++) {
     const cx = x0 + m * cellW + cellW / 2;
-    parts.push(`<text x="${cx}" y="15" text-anchor="middle" font-size="12" fill="#777">${m + 1}</text>`);
+    parts.push(`<text x="${cx}" y="17" text-anchor="middle" font-size="15" fill="#777">${m + 1}</text>`);
   }
   rows.forEach((row, ri) => {
     const ry = headerH + ri * (cellH + gap);
-    parts.push(`<text x="6" y="${ry + cellH / 2 + 4}" font-size="12.5" font-weight="600" fill="#333">${esc(row.label)}</text>`);
+    parts.push(`<text x="6" y="${ry + cellH / 2 + 5}" font-size="15" font-weight="600" fill="#333">${esc(row.label)}</text>`);
     for (let m = 0; m < 12; m++) {
       const cx = x0 + m * cellW;
       const fill = row.cells[m] || '#f4ecef';
@@ -50,38 +50,38 @@ const figures: Record<string, Figure> = {
     title: 'ビーツの品種別の断面の模式図',
     caption:
       'ビーツは品種によって断面の模様が大きく異なります。デトロイト系は濃い赤でほぼ均一、ゴルゴ（キオッジャ）は赤と白の渦巻き、ゴールデンは黄色で年輪状です。ゴルゴの渦巻きは加熱すると薄れるため、模様を活かすなら生のうす切りがおすすめです。（写真ではなく模式図です）',
-    svg: `<svg viewBox="0 0 600 250" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:560px;height:auto;display:block;margin:0 auto">
+    svg: `<svg viewBox="0 0 460 185" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:420px;height:auto;display:block;margin:0 auto">
   <g>
-    <circle cx="110" cy="100" r="78" fill="#5e0f26"/>
-    <circle cx="110" cy="100" r="71" fill="#8B1538"/>
-    <circle cx="110" cy="100" r="54" fill="none" stroke="#6d1230" stroke-width="2" opacity="0.5"/>
-    <circle cx="110" cy="100" r="36" fill="none" stroke="#6d1230" stroke-width="2" opacity="0.5"/>
-    <circle cx="110" cy="100" r="18" fill="none" stroke="#6d1230" stroke-width="2" opacity="0.5"/>
-    <circle cx="110" cy="100" r="78" fill="none" stroke="#00000022" stroke-width="1"/>
-    <text x="110" y="205" text-anchor="middle" font-size="15" font-weight="700" fill="#333">デトロイト</text>
-    <text x="110" y="225" text-anchor="middle" font-size="12" fill="#555">濃い赤・ほぼ均一</text>
+    <circle cx="85" cy="70" r="55" fill="#5e0f26"/>
+    <circle cx="85" cy="70" r="50" fill="#8B1538"/>
+    <circle cx="85" cy="70" r="38" fill="none" stroke="#6d1230" stroke-width="2" opacity="0.5"/>
+    <circle cx="85" cy="70" r="25" fill="none" stroke="#6d1230" stroke-width="2" opacity="0.5"/>
+    <circle cx="85" cy="70" r="13" fill="none" stroke="#6d1230" stroke-width="2" opacity="0.5"/>
+    <circle cx="85" cy="70" r="55" fill="none" stroke="#00000022" stroke-width="1"/>
+    <text x="85" y="144" text-anchor="middle" font-size="20" font-weight="700" fill="#333">デトロイト</text>
+    <text x="85" y="162" text-anchor="middle" font-size="18" fill="#555">濃い赤・ほぼ均一</text>
   </g>
   <g>
-    <circle cx="300" cy="100" r="78" fill="#a3284a"/>
-    <circle cx="300" cy="100" r="70" fill="#c33a5e"/>
-    <circle cx="300" cy="100" r="58" fill="#fce8ee"/>
-    <circle cx="300" cy="100" r="46" fill="#c33a5e"/>
-    <circle cx="300" cy="100" r="34" fill="#fce8ee"/>
-    <circle cx="300" cy="100" r="22" fill="#c33a5e"/>
-    <circle cx="300" cy="100" r="10" fill="#fce8ee"/>
-    <circle cx="300" cy="100" r="78" fill="none" stroke="#00000022" stroke-width="1"/>
-    <text x="300" y="205" text-anchor="middle" font-size="15" font-weight="700" fill="#333">ゴルゴ</text>
-    <text x="300" y="225" text-anchor="middle" font-size="12" fill="#555">赤白の渦巻き</text>
+    <circle cx="235" cy="70" r="55" fill="#a3284a"/>
+    <circle cx="235" cy="70" r="49" fill="#c33a5e"/>
+    <circle cx="235" cy="70" r="41" fill="#fce8ee"/>
+    <circle cx="235" cy="70" r="32" fill="#c33a5e"/>
+    <circle cx="235" cy="70" r="24" fill="#fce8ee"/>
+    <circle cx="235" cy="70" r="16" fill="#c33a5e"/>
+    <circle cx="235" cy="70" r="7" fill="#fce8ee"/>
+    <circle cx="235" cy="70" r="55" fill="none" stroke="#00000022" stroke-width="1"/>
+    <text x="235" y="144" text-anchor="middle" font-size="20" font-weight="700" fill="#333">ゴルゴ</text>
+    <text x="235" y="162" text-anchor="middle" font-size="18" fill="#555">赤白の渦巻き</text>
   </g>
   <g>
-    <circle cx="490" cy="100" r="78" fill="#cf7a1f"/>
-    <circle cx="490" cy="100" r="70" fill="#f1c44d"/>
-    <circle cx="490" cy="100" r="54" fill="none" stroke="#d9a93b" stroke-width="2" opacity="0.6"/>
-    <circle cx="490" cy="100" r="36" fill="none" stroke="#d9a93b" stroke-width="2" opacity="0.6"/>
-    <circle cx="490" cy="100" r="18" fill="none" stroke="#d9a93b" stroke-width="2" opacity="0.6"/>
-    <circle cx="490" cy="100" r="78" fill="none" stroke="#00000022" stroke-width="1"/>
-    <text x="490" y="205" text-anchor="middle" font-size="15" font-weight="700" fill="#333">ゴールデン</text>
-    <text x="490" y="225" text-anchor="middle" font-size="12" fill="#555">黄色・年輪</text>
+    <circle cx="385" cy="70" r="55" fill="#cf7a1f"/>
+    <circle cx="385" cy="70" r="49" fill="#f1c44d"/>
+    <circle cx="385" cy="70" r="38" fill="none" stroke="#d9a93b" stroke-width="2" opacity="0.6"/>
+    <circle cx="385" cy="70" r="25" fill="none" stroke="#d9a93b" stroke-width="2" opacity="0.6"/>
+    <circle cx="385" cy="70" r="13" fill="none" stroke="#d9a93b" stroke-width="2" opacity="0.6"/>
+    <circle cx="385" cy="70" r="55" fill="none" stroke="#00000022" stroke-width="1"/>
+    <text x="385" y="144" text-anchor="middle" font-size="20" font-weight="700" fill="#333">ゴールデン</text>
+    <text x="385" y="162" text-anchor="middle" font-size="18" fill="#555">黄色・年輪</text>
   </g>
 </svg>`,
   },
@@ -90,22 +90,22 @@ const figures: Record<string, Figure> = {
     title: 'ビーツの硝酸塩が一酸化窒素になり血管を広げるまでの流れ図',
     caption:
       'ビーツに多い硝酸塩は、口の中の細菌や体内のはたらきで一酸化窒素（NO）に変わります。NOには血管をゆるめて広げる作用があり、血圧の低下などが報告されています。（写真ではなく模式図です）',
-    svg: `<svg viewBox="0 0 440 360" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:420px;height:auto;display:block;margin:0 auto">
-  <rect x="20" y="8" width="400" height="64" rx="10" fill="#fbeef2" stroke="#d59bac" stroke-width="1.5"/>
-  <text x="220" y="46" text-anchor="middle" font-size="16" font-weight="700" fill="#5e0f26">ビーツの硝酸塩（NO₃⁻）</text>
-  <path d="M220 74 L220 90" stroke="#a01744" stroke-width="2"/>
-  <path d="M220 96 l-6 -9 h12 z" fill="#a01744"/>
-  <rect x="20" y="98" width="400" height="64" rx="10" fill="#fbeef2" stroke="#d59bac" stroke-width="1.5"/>
-  <text x="220" y="136" text-anchor="middle" font-size="15" font-weight="600" fill="#5e0f26">口の中の細菌が亜硝酸塩（NO₂⁻）に変える</text>
-  <path d="M220 164 L220 180" stroke="#a01744" stroke-width="2"/>
-  <path d="M220 186 l-6 -9 h12 z" fill="#a01744"/>
-  <rect x="20" y="188" width="400" height="64" rx="10" fill="#fbeef2" stroke="#d59bac" stroke-width="1.5"/>
-  <text x="220" y="226" text-anchor="middle" font-size="16" font-weight="700" fill="#5e0f26">体内で一酸化窒素（NO）になる</text>
-  <path d="M220 254 L220 270" stroke="#a01744" stroke-width="2"/>
-  <path d="M220 276 l-6 -9 h12 z" fill="#a01744"/>
-  <rect x="20" y="278" width="400" height="70" rx="10" fill="#8B1538"/>
-  <text x="220" y="310" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">血管が広がる</text>
-  <text x="220" y="332" text-anchor="middle" font-size="14" fill="#ffd9e3">血圧の低下・血流のサポート</text>
+    svg: `<svg viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:340px;height:auto;display:block;margin:0 auto">
+  <rect x="20" y="8" width="320" height="64" rx="10" fill="#fbeef2" stroke="#d59bac" stroke-width="1.5"/>
+  <text x="180" y="46" text-anchor="middle" font-size="16" font-weight="700" fill="#5e0f26">ビーツの硝酸塩（NO₃⁻）</text>
+  <path d="M180 74 L180 90" stroke="#a01744" stroke-width="2"/>
+  <path d="M180 96 l-6 -9 h12 z" fill="#a01744"/>
+  <rect x="20" y="98" width="320" height="64" rx="10" fill="#fbeef2" stroke="#d59bac" stroke-width="1.5"/>
+  <text x="180" y="136" text-anchor="middle" font-size="15" font-weight="600" fill="#5e0f26">口の中の細菌が亜硝酸塩（NO₂⁻）に変える</text>
+  <path d="M180 164 L180 180" stroke="#a01744" stroke-width="2"/>
+  <path d="M180 186 l-6 -9 h12 z" fill="#a01744"/>
+  <rect x="20" y="188" width="320" height="64" rx="10" fill="#fbeef2" stroke="#d59bac" stroke-width="1.5"/>
+  <text x="180" y="226" text-anchor="middle" font-size="16" font-weight="700" fill="#5e0f26">体内で一酸化窒素（NO）になる</text>
+  <path d="M180 254 L180 270" stroke="#a01744" stroke-width="2"/>
+  <path d="M180 276 l-6 -9 h12 z" fill="#a01744"/>
+  <rect x="20" y="278" width="320" height="70" rx="10" fill="#8B1538"/>
+  <text x="180" y="310" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">血管が広がる</text>
+  <text x="180" y="332" text-anchor="middle" font-size="14" fill="#ffd9e3">血圧の低下・血流のサポート</text>
 </svg>`,
   },
   // 保存方法ごとの日持ちの目安（storage の検証済み数値をバーで可視化）
@@ -113,20 +113,20 @@ const figures: Record<string, Figure> = {
     title: 'ビーツの保存方法ごとの日持ちの目安の棒グラフ',
     caption:
       'ビーツの保存方法ごとの日持ちのおおよその目安です（保存状態により前後します）。冷凍がもっとも長く約3か月、生のままの冷蔵は2〜3週間、加熱後は約1週間が目安です。（模式図）',
-    svg: `<svg viewBox="0 0 600 215" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:560px;height:auto;display:block;margin:0 auto">
-  <line x1="150" y1="8" x2="150" y2="195" stroke="#e7d6da" stroke-width="1"/>
-  <text x="8" y="38" font-size="14" font-weight="600" fill="#333">加熱後・冷蔵</text>
-  <rect x="150" y="20" width="28" height="30" rx="3" fill="#c98aa0"/>
-  <text x="186" y="40" font-size="13" fill="#555">約1週間</text>
-  <text x="8" y="86" font-size="14" font-weight="600" fill="#333">生・冷蔵</text>
-  <rect x="150" y="68" width="69" height="30" rx="3" fill="#b25c79"/>
-  <text x="227" y="88" font-size="13" fill="#555">2〜3週間</text>
-  <text x="8" y="134" font-size="14" font-weight="600" fill="#333">ピクルス</text>
-  <rect x="150" y="116" width="118" height="30" rx="3" fill="#9c3358"/>
-  <text x="276" y="136" font-size="13" fill="#555">1ヶ月以上</text>
-  <text x="8" y="182" font-size="14" font-weight="600" fill="#333">冷凍</text>
-  <rect x="150" y="164" width="330" height="30" rx="3" fill="#8B1538"/>
-  <text x="488" y="184" font-size="13" fill="#555">約3ヶ月</text>
+    svg: `<svg viewBox="0 0 425 215" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:400px;height:auto;display:block;margin:0 auto">
+  <line x1="115" y1="8" x2="115" y2="195" stroke="#e7d6da" stroke-width="1"/>
+  <text x="8" y="38" font-size="17" font-weight="600" fill="#333">加熱後・冷蔵</text>
+  <rect x="115" y="20" width="19" height="30" rx="3" fill="#c98aa0"/>
+  <text x="142" y="40" font-size="17" fill="#555">約1週間</text>
+  <text x="8" y="86" font-size="17" font-weight="600" fill="#333">生・冷蔵</text>
+  <rect x="115" y="68" width="46" height="30" rx="3" fill="#b25c79"/>
+  <text x="169" y="88" font-size="17" fill="#555">2〜3週間</text>
+  <text x="8" y="134" font-size="17" font-weight="600" fill="#333">ピクルス</text>
+  <rect x="115" y="116" width="79" height="30" rx="3" fill="#9c3358"/>
+  <text x="202" y="136" font-size="17" fill="#555">1ヶ月以上</text>
+  <text x="8" y="182" font-size="17" font-weight="600" fill="#333">冷凍</text>
+  <rect x="115" y="164" width="220" height="30" rx="3" fill="#8B1538"/>
+  <text x="343" y="184" font-size="17" fill="#555">約3ヶ月</text>
 </svg>`,
   },
   // 旬カレンダー（種まき/収穫・旬/入手しやすさ の年間リズム・calendarの月別表を可視化）
@@ -158,31 +158,31 @@ const figures: Record<string, Figure> = {
     title: 'シュウ酸がカルシウムと結びつく場所による結石リスクの違い',
     caption:
       'シュウ酸は、カルシウムを多く含む食材と一緒に食べると腸の中で結びつき、吸収されずに排出されます。単独で多くとると腸から吸収され、腎臓でカルシウムと結びついて結石の原因になることがあります。ビーツに乳製品などを合わせるのは、この点で理にかなっています。（写真ではなく模式図です）',
-    svg: `<svg viewBox="0 0 440 470" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:420px;height:auto;display:block;margin:0 auto">
-  <rect x="20" y="8" width="400" height="30" rx="6" fill="#6a994e"/>
-  <text x="220" y="28" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">カルシウムと一緒に食べると</text>
-  <rect x="20" y="46" width="400" height="44" rx="8" fill="#eef4e8" stroke="#a7c293" stroke-width="1.5"/>
-  <text x="220" y="73" text-anchor="middle" font-size="14.5" fill="#2f5233">シュウ酸 ＋ カルシウム（食品）</text>
-  <path d="M220 90 L220 105" stroke="#6a994e" stroke-width="2"/>
-  <path d="M220 110 l-6 -8 h12 z" fill="#6a994e"/>
-  <rect x="20" y="112" width="400" height="44" rx="8" fill="#eef4e8" stroke="#a7c293" stroke-width="1.5"/>
-  <text x="220" y="139" text-anchor="middle" font-size="14.5" fill="#2f5233">腸の中で結びつき、吸収されない</text>
-  <path d="M220 156 L220 171" stroke="#6a994e" stroke-width="2"/>
-  <path d="M220 176 l-6 -8 h12 z" fill="#6a994e"/>
-  <rect x="20" y="178" width="400" height="46" rx="8" fill="#386641"/>
-  <text x="220" y="206" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff">便として排出。結石になりにくい</text>
-  <rect x="20" y="244" width="400" height="30" rx="6" fill="#8B1538"/>
-  <text x="220" y="264" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">シュウ酸だけ・とりすぎると</text>
-  <rect x="20" y="282" width="400" height="44" rx="8" fill="#fbeef2" stroke="#d59bac" stroke-width="1.5"/>
-  <text x="220" y="309" text-anchor="middle" font-size="14.5" fill="#8B1538">シュウ酸が腸から吸収される</text>
-  <path d="M220 326 L220 341" stroke="#a01744" stroke-width="2"/>
-  <path d="M220 346 l-6 -8 h12 z" fill="#a01744"/>
-  <rect x="20" y="348" width="400" height="44" rx="8" fill="#fbeef2" stroke="#d59bac" stroke-width="1.5"/>
-  <text x="220" y="375" text-anchor="middle" font-size="14.5" fill="#8B1538">腎臓でカルシウムと結びつく</text>
-  <path d="M220 392 L220 407" stroke="#a01744" stroke-width="2"/>
-  <path d="M220 412 l-6 -8 h12 z" fill="#a01744"/>
-  <rect x="20" y="414" width="400" height="46" rx="8" fill="#8B1538"/>
-  <text x="220" y="442" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff">シュウ酸カルシウムの結石に</text>
+    svg: `<svg viewBox="0 0 360 470" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:340px;height:auto;display:block;margin:0 auto">
+  <rect x="20" y="8" width="320" height="30" rx="6" fill="#6a994e"/>
+  <text x="180" y="28" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">カルシウムと一緒に食べると</text>
+  <rect x="20" y="46" width="320" height="44" rx="8" fill="#eef4e8" stroke="#a7c293" stroke-width="1.5"/>
+  <text x="180" y="73" text-anchor="middle" font-size="14.5" fill="#2f5233">シュウ酸 ＋ カルシウム（食品）</text>
+  <path d="M180 90 L180 105" stroke="#6a994e" stroke-width="2"/>
+  <path d="M180 110 l-6 -8 h12 z" fill="#6a994e"/>
+  <rect x="20" y="112" width="320" height="44" rx="8" fill="#eef4e8" stroke="#a7c293" stroke-width="1.5"/>
+  <text x="180" y="139" text-anchor="middle" font-size="14.5" fill="#2f5233">腸の中で結びつき、吸収されない</text>
+  <path d="M180 156 L180 171" stroke="#6a994e" stroke-width="2"/>
+  <path d="M180 176 l-6 -8 h12 z" fill="#6a994e"/>
+  <rect x="20" y="178" width="320" height="46" rx="8" fill="#386641"/>
+  <text x="180" y="206" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff">便として排出。結石になりにくい</text>
+  <rect x="20" y="244" width="320" height="30" rx="6" fill="#8B1538"/>
+  <text x="180" y="264" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">シュウ酸だけ・とりすぎると</text>
+  <rect x="20" y="282" width="320" height="44" rx="8" fill="#fbeef2" stroke="#d59bac" stroke-width="1.5"/>
+  <text x="180" y="309" text-anchor="middle" font-size="14.5" fill="#8B1538">シュウ酸が腸から吸収される</text>
+  <path d="M180 326 L180 341" stroke="#a01744" stroke-width="2"/>
+  <path d="M180 346 l-6 -8 h12 z" fill="#a01744"/>
+  <rect x="20" y="348" width="320" height="44" rx="8" fill="#fbeef2" stroke="#d59bac" stroke-width="1.5"/>
+  <text x="180" y="375" text-anchor="middle" font-size="14.5" fill="#8B1538">腎臓でカルシウムと結びつく</text>
+  <path d="M180 392 L180 407" stroke="#a01744" stroke-width="2"/>
+  <path d="M180 412 l-6 -8 h12 z" fill="#a01744"/>
+  <rect x="20" y="414" width="320" height="46" rx="8" fill="#8B1538"/>
+  <text x="180" y="442" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff">シュウ酸カルシウムの結石に</text>
 </svg>`,
   },
 };
