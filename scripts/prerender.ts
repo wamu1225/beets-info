@@ -500,19 +500,20 @@ writeStaticPage(
 console.log(`✓ Generated ${generatedCount} static pages`);
 
 // sitemap.xml を sections + 静的ページから動的生成（手動更新による抜け漏れ防止）
+// lastmod はページ単位の実更新日（O-2-27）。sections は既存の s.updatedAt をそのまま使う。
 const sitemapToday = new Date().toISOString().split('T')[0];
 const sitemapEntries = [
-  { path: '/', changefreq: 'weekly', priority: '1.0' },
-  ...sections.map((s) => ({ path: `/${s.id}/`, changefreq: 'monthly', priority: '0.9' })),
-  { path: '/glossary/', changefreq: 'monthly', priority: '0.7' },
-  { path: '/about/', changefreq: 'yearly', priority: '0.3' },
-  { path: '/privacy/', changefreq: 'yearly', priority: '0.3' },
+  { path: '/', lastmod: sitemapToday, changefreq: 'weekly', priority: '1.0' },
+  ...sections.map((s) => ({ path: `/${s.id}/`, lastmod: s.updatedAt, changefreq: 'monthly', priority: '0.9' })),
+  { path: '/glossary/', lastmod: sitemapToday, changefreq: 'monthly', priority: '0.7' },
+  { path: '/about/', lastmod: sitemapToday, changefreq: 'yearly', priority: '0.3' },
+  { path: '/privacy/', lastmod: sitemapToday, changefreq: 'yearly', priority: '0.3' },
 ];
 const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${sitemapEntries.map((e) => `  <url>
     <loc>${BASE_URL}${e.path}</loc>
-    <lastmod>${sitemapToday}</lastmod>
+    <lastmod>${e.lastmod}</lastmod>
     <changefreq>${e.changefreq}</changefreq>
     <priority>${e.priority}</priority>
   </url>`).join('\n')}
