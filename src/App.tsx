@@ -485,6 +485,7 @@ function Footer() {
         <a href="https://study-apps.com/editorial-policy/">編集方針</a>
         <a href="https://study-apps.com/">study-apps.com</a>
       </div>
+      <div style={{ marginTop: 8, wordBreak: 'keep-all' }}>ほかの 植物ガイド：<a href="https://study-apps.com/monstera-info/">モンステラ</a> ・ <a href="https://study-apps.com/gajumaru-info/">ガジュマル</a> ・ <a href="https://study-apps.com/sprout-info/">スプラウト</a></div>
       <div style={{ marginTop: 8 }}>
         本サイトは一般的な情報を提供するもので、医学的助言ではありません。健康上の懸念がある方は医師にご相談ください。
       </div>
