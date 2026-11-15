@@ -108,6 +108,53 @@ const figures: Record<string, Figure> = {
   <text x="180" y="332" text-anchor="middle" font-size="14" fill="#ffd9e3">血圧の低下・血流のサポート</text>
 </svg>`,
   },
+  // 下ごしらえの方法ごとの時間（prep。数字は NCHFP・メイン大学・オレゴン州立大学の資料）
+  'prep-time-bars': {
+    title: 'ビーツの下ごしらえの方法ごとにかかる時間の棒グラフ',
+    caption:
+      '濃い帯は小さめ（直径5〜6cm）のとき、薄い帯は大きいビーツで延びる分です。',
+    svg: `<svg viewBox="0 0 380 228" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:400px;height:auto;display:block;margin:0 auto">
+  <line x1="104" y1="6" x2="104" y2="202" stroke="#e7d6da" stroke-width="1"/>
+  <line x1="200" y1="6" x2="200" y2="202" stroke="#e7d6da" stroke-width="1" stroke-dasharray="3 4"/>
+  <line x1="296" y1="6" x2="296" y2="202" stroke="#e7d6da" stroke-width="1" stroke-dasharray="3 4"/>
+  <text x="104" y="222" font-size="15" fill="#777" text-anchor="middle">0分</text>
+  <text x="200" y="222" font-size="15" fill="#777" text-anchor="middle">30分</text>
+  <text x="296" y="222" font-size="15" fill="#777" text-anchor="middle">60分</text>
+  <text x="4" y="34" font-size="18" font-weight="600" fill="#333">生</text>
+  <text x="112" y="34" font-size="18" fill="#555">加熱なし</text>
+  <text x="4" y="84" font-size="18" font-weight="600" fill="#333">電子レンジ</text>
+  <rect x="104" y="62" width="60.8" height="32" rx="3" fill="#8B1538"/>
+  <text x="171.8" y="84" font-size="18" fill="#555">約19分</text>
+  <text x="4" y="134" font-size="18" font-weight="600" fill="#333">ゆでる</text>
+  <rect x="104" y="112" width="160.0" height="32" rx="3" fill="#d99fb0"/>
+  <rect x="104" y="112" width="80.0" height="32" rx="3" fill="#8B1538"/>
+  <text x="271.0" y="134" font-size="18" fill="#555">25〜50分</text>
+  <text x="4" y="184" font-size="18" font-weight="600" fill="#333">オーブン</text>
+  <rect x="104" y="162" width="192.0" height="32" rx="3" fill="#d99fb0"/>
+  <rect x="104" y="162" width="144.0" height="32" rx="3" fill="#8B1538"/>
+  <text x="303.0" y="184" font-size="18" fill="#555">45〜60分</text>
+</svg>`,
+  },
+  // 加熱前の切り方（prep）。茎を残し、細い根と皮はそのまま
+  'prep-cut-lines': {
+    title: 'ビーツを加熱する前の切り方の図。茎は1〜2cm残して切り、細い根と皮はそのままにする',
+    caption:
+      '切り口が少ないほど、加熱中に赤い色が流れ出にくくなります。',
+    svg: `<svg viewBox="0 0 350 240" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:400px;height:auto;display:block;margin:0 auto">
+  <path d="M70 72 L62 12 M82 70 L82 6 M94 72 L104 12" stroke="#6a994e" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <circle cx="82" cy="128" r="58" fill="#8B1538"/>
+  <path d="M82 184 Q86 208 78 232" stroke="#8B1538" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <line x1="40" y1="52" x2="160" y2="52" stroke="#333" stroke-width="2" stroke-dasharray="6 5"/>
+  <text x="168" y="46" font-size="18" font-weight="600" fill="#333">ここで切る</text>
+  <text x="168" y="68" font-size="16" fill="#555">茎を1〜2cm残す</text>
+  <line x1="142" y1="128" x2="162" y2="128" stroke="#555" stroke-width="1.5"/>
+  <text x="168" y="124" font-size="18" font-weight="600" fill="#333">皮はむかない</text>
+  <text x="168" y="146" font-size="16" fill="#555">丸ごと加熱する</text>
+  <line x1="88" y1="214" x2="162" y2="214" stroke="#555" stroke-width="1.5"/>
+  <text x="168" y="210" font-size="18" font-weight="600" fill="#333">細い根は切らない</text>
+  <text x="168" y="232" font-size="16" fill="#555">皮と一緒に取る</text>
+</svg>`,
+  },
   // 保存方法ごとの日持ちの目安（storage の検証済み数値をバーで可視化）
   'storage-duration': {
     title: 'ビーツの保存方法ごとの日持ちの目安の棒グラフ',
